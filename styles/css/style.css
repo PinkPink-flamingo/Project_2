@@ -1,3 +1,21 @@
+@font-face {
+  src: url(/assets/fonts/BadScript-Regular.ttf);
+  font-family: BadScript-Regular;
+}
 
+@font-face {
+  src: url(/assets/fonts/Moniqa-LightParagraph.ttf);
+  font-family: Moniqa-LightParagraph;
+}
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  src: url(/assets/fonts/Moniqa-MediumHeading.ttf);
+  font-family: Moniqa-MediumHeading;
+}
+
+@font-face {
+  src: url(/assets/fonts/Moniqa-SemiBoldParagraph.ttf);
+  font-family: Moniqa-SemiBoldParagraph;
+}
+
+/* fonts end*/

@@ -1,8 +1,31 @@
-.test-scss {
-  color: green;
+.test {
+  width: 800px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: rgb(44, 43, 43);
 }
-.test-scss .link {
+.test__title {
+  color: rgb(224, 0, 150);
+  font-weight: 700;
+}
+.test__link {
   text-decoration: none;
+  color: rgb(255, 244, 85);
+  font-size: 22px;
+  font-weight: bold;
+}
+.test__link:hover {
+  text-decoration: underline cornflowerblue;
+}
+.test__box {
+  width: 500px;
+  height: 100px;
+  margin-left: 10px;
+  background-color: beige;
+}
+.test__box-title {
+  color: rgb(224, 0, 150);
+  font-style: italic;
 }
 
 /*# sourceMappingURL=style.css.map */

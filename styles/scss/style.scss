@@ -1,7 +1,2 @@
-.test-scss {
-    color: green;
-
-    .link {
-        text-decoration: none;
-    }
-}
+@import "var";
+@import "requests";

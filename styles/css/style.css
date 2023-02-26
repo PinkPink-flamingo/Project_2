@@ -1,0 +1,36 @@
+@font-face {
+  src: url(/assets/fonts/BadScript-Regular.ttf);
+  font-family: BadScript-Regular;
+}
+@font-face {
+  src: url(/assets/fonts/Moniqa-LightParagraph.ttf);
+  font-family: Moniqa-LightParagraph;
+}
+@font-face {
+  src: url(/assets/fonts/Moniqa-MediumHeading.ttf);
+  font-family: Moniqa-MediumHeading;
+}
+@font-face {
+  src: url(/assets/fonts/Moniqa-SemiBoldParagraph.ttf);
+  font-family: Moniqa-SemiBoldParagraph;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Moniqa-LightParagraph";
+  font-size: 24px;
+  color: #ffffff;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

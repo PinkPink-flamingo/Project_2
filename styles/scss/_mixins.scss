@@ -1,5 +1,5 @@
+// mixin для заголовков секций
 @mixin font-section-title {
-    // mixin для заголовков секций
     font-family: 'Moniqa-SemiBoldParagraph';
     text-transform: uppercase;
     font-weight: 600;
@@ -8,8 +8,8 @@
     color: white;
 }
 
+// mixin для цитат
 @mixin font-citation {
-    // mixin для цитат
     font-family: 'BadScript-Regular';
     font-style: italic;
     font-weight: 400;
@@ -19,10 +19,11 @@
     color: $pink-color;
 }
 
+// mixin для кнопок
 @mixin button {
-    // mixin для кнопок
     width: 273px;
     height: 92px;
+    border: none;
     border-radius: 20px;
     cursor: pointer;
     background-color: $pink-color;
@@ -36,7 +37,6 @@
     &:hover {
         opacity: .85;
     }
-
 }
 
 //Чтобы воспользоваться @mixin - пишем @include "название миксина";

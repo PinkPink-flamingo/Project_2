@@ -8,11 +8,12 @@
 // element list
 .requests__wrap-first {
     display: flex;
-    margin-bottom: 150px;
+    margin-bottom: 0px;
 }
 
 .requests__wrap-list {
     max-width: 482px;
+    max-height: 790px;
     background-color: $grey-color;
     position: relative;
     top: 56px;
@@ -27,7 +28,7 @@
     color: $bg-color;
 
     &-item {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
         text-transform: uppercase;
         font-family: 'Moniqa-MediumHeading';
 
@@ -44,8 +45,8 @@
 
         &:hover {
             color: $pink-color;
-            font-size: larger;
-            transition: all .6s;
+            transition: all .4s;
+            transform: scale(1.05);
         }
 
     }
@@ -55,16 +56,18 @@
 .requests__wrap-image {
     position: relative;
     width: 939px;
-    max-height: 10px;
-    background-color: $pink-color;
     z-index: -1;
     transform: translateX(-10%);
+
+    &::before {
+        content: '';
+        display: block;
+        height: 10px;
+        background-color: $pink-color;
+    }
 }
 
 .requests__image {
-    position: absolute;
-    top: 10px;
-    left: 0;
     max-width: 100%;
 }
 
@@ -75,6 +78,7 @@
 .requests__wrap-second {
     display: flex;
     flex-direction: column;
+    transform: translateY(-20%)
 }
 
 .requests__consultation-button {
@@ -86,19 +90,18 @@
     margin-top: 40px;
     position: absolute;
     max-width: 800px;
-    height: 325px;
     background-color: $grey-color;
     border-radius: 40px;
     border: none;
     transition: .8s;
     padding: 25px;
+    opacity: 0;
 
     &-text {
         font-family: 'Moniqa-MediumHeading';
         font-size: 18px;
         font-weight: bold;
-        font-style: italic;
-        color: $pink-color;
+        color: $bg-color;
         margin-top: 0;
         margin-bottom: 10px;
     }
@@ -108,15 +111,15 @@
     display: none;
 
     &:checked~.requests__consultation-terms {
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
+        display: block;
+        height: auto;
+        opacity: 1;
     }
 }
 
 
 .requests__wrap-consultation {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .requests__wrap-citation {
@@ -134,7 +137,7 @@
 
 //second block end
 .requests {
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 
 // Requests-section end

@@ -51,7 +51,7 @@ img {
 
 .requests__wrap-first {
   display: flex;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .requests__wrap-list {
@@ -109,6 +109,55 @@ img {
 .requests__wrap-second {
   display: flex;
   flex-direction: column;
+}
+
+.requests__consultation-button {
+  width: 273px;
+  height: 92px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #FB016B;
+  font-family: "Moniqa-LightParagraph";
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  padding: 25px 85px;
+}
+.requests__consultation-button:hover {
+  opacity: 0.85;
+}
+
+.requests__consultation-terms {
+  margin-top: 40px;
+  position: absolute;
+  max-width: 800px;
+  height: 325px;
+  background-color: #D9D9D9;
+  border-radius: 40px;
+  border: none;
+  transition: 0.8s;
+  padding: 25px;
+}
+.requests__consultation-terms-text {
+  font-family: "Moniqa-MediumHeading";
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: #FB016B;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#check_label {
+  display: none;
+}
+#check_label:checked ~ .requests__consultation-terms {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .requests__wrap-consultation {

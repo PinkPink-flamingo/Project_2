@@ -8,7 +8,7 @@
 // element list
 .requests__wrap-first {
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .requests__wrap-list {
@@ -77,6 +77,44 @@
     flex-direction: column;
 }
 
+.requests__consultation-button {
+    @include button;
+    padding: 25px 85px;
+}
+
+.requests__consultation-terms {
+    margin-top: 40px;
+    position: absolute;
+    max-width: 800px;
+    height: 325px;
+    background-color: $grey-color;
+    border-radius: 40px;
+    border: none;
+    transition: .8s;
+    padding: 25px;
+
+    &-text {
+        font-family: 'Moniqa-MediumHeading';
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
+        color: $pink-color;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+#check_label {
+    display: none;
+
+    &:checked~.requests__consultation-terms {
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+}
+
+
 .requests__wrap-consultation {
     margin-bottom: 30px;
 }
@@ -93,9 +131,10 @@
     line-height: 70px;
 }
 
+
+//second block end
 .requests {
     margin-bottom: 120px;
 }
 
-//second block end
 // Requests-section end

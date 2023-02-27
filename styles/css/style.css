@@ -81,6 +81,7 @@ img {
   margin-bottom: 4px;
   width: 12px;
   height: 12px;
+  border-radius: 3px;
   background-color: #FB016B;
 }
 .requests__list-item:hover {

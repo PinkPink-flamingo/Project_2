@@ -57,6 +57,7 @@ img {
 .requests__wrap-list {
   max-width: 482px;
   max-height: 790px;
+  overflow: hidden;
   background-color: #D9D9D9;
   position: relative;
   top: 56px;

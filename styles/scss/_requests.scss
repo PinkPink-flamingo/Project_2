@@ -14,6 +14,7 @@
 .requests__wrap-list {
     max-width: 482px;
     max-height: 790px;
+    overflow: hidden;
     background-color: $grey-color;
     position: relative;
     top: 56px;

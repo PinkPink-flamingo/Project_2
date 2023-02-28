@@ -26,11 +26,17 @@ body {
   font-family: "Moniqa-LightParagraph";
   font-size: 24px;
   color: #ffffff;
-  background-color: black;
+  background-color: #000000;
 }
 
 img {
   max-width: 100%;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

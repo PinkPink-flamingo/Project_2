@@ -5,7 +5,7 @@
     font-weight: 600;
     font-size: 40px;
     line-height: 42px;
-    color: white;
+    color: $white-color;
 }
 
 // mixin для цитат
@@ -32,7 +32,7 @@
     font-weight: 300;
     font-size: 40px;
     line-height: 42px;
-    color: white;
+    color: $white-color;
 
     &:hover {
         opacity: .85;

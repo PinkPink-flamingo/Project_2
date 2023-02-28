@@ -1,0 +1,16 @@
+.footer {
+    height: 200px;
+    display: flex;
+    background-color: $bg-color;
+
+    &__title {
+        color: $pink-color;
+
+        font-family: BadScript-Regular;
+        font-size: 10px;
+    }
+    &__nav {
+        color: white;
+    }
+
+} 

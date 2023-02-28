@@ -38,11 +38,14 @@ img {
   padding: 0 15px;
 }
 
-.podcast {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: #000000;
+#n2 {
+  font-family: "Moniqa-SemiBoldParagraph";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 63px;
 }
 
 .podcast__container {
@@ -90,12 +93,10 @@ img {
   grid-column: 3/4;
   grid-row: 3/4;
 }
-
 .podcast__container .card {
   position: relative;
   cursor: pointer;
 }
-
 .podcast__container .card .face {
   width: 300px;
   height: 200px;
@@ -103,7 +104,6 @@ img {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
 .podcast__container .card .face.face1 {
   position: relative;
   background: #000000;
@@ -122,40 +122,15 @@ img {
       -ms-transform: translateY(100px);
           transform: translateY(100px);
 }
-
-.podcast__container .card:hover .face.face1 {
-  background: #FB016B;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .podcast__container .card .face.face1 .content {
   opacity: 0.2;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
-.podcast__container .card:hover .face.face1 .content {
-  opacity: 1;
-}
-
-.podcast__container .card .face.face1 .content img {
-  max-width: 100px;
-}
-
-.podcast__container .card .face.face1 .content h3 {
-  margin: 10px 0 0;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 1.5em;
-}
-
 .podcast__container .card .face.face2 {
   position: relative;
-  background: #fff;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,35 +143,61 @@ img {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-shadow: 0 20px 50px #FB016B;
-          box-shadow: 0 20px 50px #FB016B;
   -webkit-transform: translateY(-100px);
       -ms-transform: translateY(-100px);
           transform: translateY(-100px);
 }
-
-.podcast__container .card:hover .face.face2 {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .podcast__container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
+  color: #000000;
+  text-align: center;
+  font-family: "Moniqa-LightParagraph";
 }
-
 .podcast__container .card .face.face2 .content a {
   margin: 15px 0 0;
   display: inline-block;
   text-decoration: none;
   font-weight: 900;
-  color: #333;
+  color: #000000;
   padding: 5px;
-  border: 1px solid #333;
+  border: 1px solid #000000;
+}
+.podcast__container :hover .face.face1 {
+  background: #FB016B;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.podcast__container :hover .face.face1 .content {
+  opacity: 1;
+}
+.podcast__container :hover .face.face1 .content img {
+  max-width: 100px;
+}
+.podcast__container :hover .face.face2 {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .podcast__container .card .face.face2 .content a:hover {
-  background: #333;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
+}
+
+#podcast__title {
+  font-family: "Moniqa-LightParagraph";
+  color: #000000;
+}
+
+.podcast__citation {
+  font-family: "BadScript-Regular";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: right;
+  color: #FB016B;
+  line-height: 70px;
 }

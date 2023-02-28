@@ -26,11 +26,41 @@ body {
   font-family: "Moniqa-LightParagraph";
   font-size: 24px;
   color: #ffffff;
-  background-color: black;
+  background-color: #000000;
 }
 
 img {
   max-width: 100%;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-meny {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #ffffff;
+}
+a:hover {
+  width: 211px;
+  height: 58px;
+  border: none;
+  background-color: #FB016B;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 33px;
+  color: #ffffff;
+  background: #FB016B;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

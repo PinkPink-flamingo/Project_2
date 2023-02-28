@@ -1,0 +1,27 @@
+
+.header-meny {
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+
+}
+
+a {
+text-decoration: none;
+list-style-type: none;
+color: $white-color;
+
+&:hover {
+    width: 211px;
+height: 58px;
+border: none;
+    background-color: $pink-color;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 33px;
+    color: $white-color;
+
+background:  $pink-color;
+border-radius: 10px;
+}
+}

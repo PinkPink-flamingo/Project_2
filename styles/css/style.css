@@ -1,18 +1,18 @@
 @font-face {
-  src: url(/assets/fonts/BadScript-Regular.ttf);
-  font-family: BadScript-Regular;
+  src: url(/Project_2/assets/fonts/BadScript-Regular.ttf);
+  font-family: "BadScript-Regular";
 }
 @font-face {
-  src: url(/assets/fonts/Moniqa-LightParagraph.ttf);
-  font-family: Moniqa-LightParagraph;
+  src: url(/Project_2/assets/fonts/Moniqa-LightParagraph.ttf);
+  font-family: "Moniqa-LightParagraph";
 }
 @font-face {
-  src: url(/assets/fonts/Moniqa-MediumHeading.ttf);
-  font-family: Moniqa-MediumHeading;
+  src: url(/Project_2/assets/fonts/Moniqa-MediumHeading.ttf);
+  font-family: "Moniqa-MediumHeading";
 }
 @font-face {
-  src: url(/assets/fonts/Moniqa-SemiBoldParagraph.ttf);
-  font-family: Moniqa-SemiBoldParagraph;
+  src: url(/Project_2/assets/fonts/Moniqa-SemiBoldParagraph.ttf);
+  font-family: "Moniqa-SemiBoldParagraph";
 }
 *,
 :after,
@@ -150,13 +150,13 @@ img {
 .podcast__container .card .face.face2 .content p {
   margin: 0;
   padding: 0;
-  color: #000000;
   text-align: center;
   font-family: "Moniqa-LightParagraph";
+  font-size: 24px;
+  line-height: 24.98px;
+  color: #000000;
 }
 .podcast__container .card .face.face2 .content a {
-  margin: 15px 0 0;
-  display: inline-block;
   text-decoration: none;
   font-weight: 900;
   color: #000000;
@@ -186,11 +186,6 @@ img {
   color: #ffffff;
 }
 
-#podcast__title {
-  font-family: "Moniqa-LightParagraph";
-  color: #000000;
-}
-
 .podcast__citation {
   font-family: "BadScript-Regular";
   font-style: italic;
@@ -200,4 +195,17 @@ img {
   text-align: right;
   color: #FB016B;
   line-height: 70px;
+}
+
+.podcast__link {
+  margin: 15px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

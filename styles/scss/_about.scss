@@ -3,23 +3,32 @@
     flex-direction: row;
     justify-content: space-around;
 
-    .header-meny__li {
+    &__li {
         list-style-type: none;
-    }
 
-    .header-meny__li-a {
-        text-decoration: none;
-        color: $white-color;
+        &-a {
+            text-decoration: none;
+            color: $white-color;
+        }
     }
-}
 
 .about {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+grid-template-columns: 18.5% 81.5%;
+
     padding-left: 8%;
     padding-right: 5%;
-}
-
-.about__text {
-    width: 50%;
+        }
+        
+        #check_label {
+            display: none;
+        
+            &:checked~.requests__consultation-terms {
+                display: block;
+                height: auto;
+                opacity: 1;
+            }
+        }
+    
+    }    
 }

@@ -44,23 +44,23 @@ img {
   flex-direction: row;
   justify-content: space-around;
 }
-
-a {
-  text-decoration: none;
+.header-meny .header-meny__li {
   list-style-type: none;
+}
+.header-meny .header-meny__li-a {
+  text-decoration: none;
   color: #ffffff;
 }
-a:hover {
-  width: 211px;
-  height: 58px;
-  border: none;
-  background-color: #FB016B;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 33px;
-  color: #ffffff;
-  background: #FB016B;
-  border-radius: 10px;
+
+.about {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8%;
+  padding-right: 5%;
+}
+
+.about__text {
+  width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

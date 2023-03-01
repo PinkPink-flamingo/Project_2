@@ -1,27 +1,25 @@
-
-.header-meny {
+.header-meny{
     display: flex;
     flex-direction: row;
-justify-content: space-around;
+    justify-content: space-around;
 
+    .header-meny__li {
+        list-style-type: none;
+    }
+
+    .header-meny__li-a {
+        text-decoration: none;
+        color: $white-color;
+    }
 }
 
-a {
-text-decoration: none;
-list-style-type: none;
-color: $white-color;
-
-&:hover {
-    width: 211px;
-height: 58px;
-border: none;
-    background-color: $pink-color;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 33px;
-    color: $white-color;
-
-background:  $pink-color;
-border-radius: 10px;
+.about {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8%;
+    padding-right: 5%;
 }
+
+.about__text {
+    width: 50%;
 }

@@ -117,3 +117,45 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+@font-face {
+  src: url(/assets/fonts/BadScript-Regular.ttf);
+  font-family: BadScript-Regular;
+}
+@font-face {
+  src: url(/assets/fonts/Moniqa-LightParagraph.ttf);
+  font-family: Moniqa-LightParagraph;
+}
+@font-face {
+  src: url(/assets/fonts/Moniqa-MediumHeading.ttf);
+  font-family: Moniqa-MediumHeading;
+}
+@font-face {
+  src: url(/assets/fonts/Moniqa-SemiBoldParagraph.ttf);
+  font-family: Moniqa-SemiBoldParagraph;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Moniqa-LightParagraph";
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

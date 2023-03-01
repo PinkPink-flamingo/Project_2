@@ -1,4 +1,4 @@
-#n2 {
+.podcast__title {
     @include font-section-title;
     margin-bottom: 63px;
 }
@@ -7,51 +7,52 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: space-around;
-    margin-left: 100px;
+    grid-template-rows: repeat(3, 325px);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
 
-    #podcast__card1 {
+    &__card1 {
         grid-column: 1/2;
         grid-row: 1/2;
     }
 
-    #podcast__card2 {
+    &__card2 {
         grid-column: 2/3;
         grid-row: 1/2;
     }
 
-    #podcast__card3 {
+    &__card3 {
         grid-column: 3/4;
         grid-row: 1/2;
     }
 
-    #podcast__card4 {
+    &__card4 {
         grid-column: 1/2;
         grid-row: 2/3;
     }
 
-    #podcast__card5 {
+    &__card5 {
         grid-column: 2/3;
         grid-row: 2/3;
     }
 
-    #podcast__card6 {
+    &__card6 {
         grid-column: 3/4;
         grid-row: 2/3;
     }
 
-    #podcast__card7 {
+    &__card7 {
         grid-column: 1/2;
         grid-row: 3/4;
     }
 
-    #podcast__card8 {
+    &__card8 {
         grid-column: 2/3;
         grid-row: 3/4;
     }
 
-    #podcast__card9 {
+    &__card9 {
         grid-column: 3/4;
         grid-row: 3/4;
     }
@@ -84,13 +85,12 @@
 
         .face.face2 {
             position: relative;
-            background: $white-color;
+            background: $grey-color;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
             box-sizing: border-box;
-            // box-shadow: 0 20px 50px 0px #FB016B;
             transform: translateY(-100px);
 
             .content p {
@@ -105,10 +105,13 @@
 
             .content a {
                 text-decoration: none;
-                font-weight: 900;
-                color: $bg-color;
-                padding: 5px;
-                border: 1px solid $bg-color;
+                font-weight: 300;
+                border: none;
+                border-radius: 20px;
+                background-color: $pink-color;
+                font-family: 'Moniqa-LightParagraph';
+                color: $white-color;
+                padding: 10px;
             }
         }
     }
@@ -133,7 +136,7 @@
 
 .podcast__container .card .face.face2 .content a:hover {
     background: $bg-color;
-    color: $white-color;
+    color: $grey-color;
 }
 
 .podcast__citation {
@@ -146,4 +149,130 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:730px) {
+    .podcast__title {
+        font-size: 30px;
+    }
+
+    .podcast__citation {
+        font-size: 30px;
+    }
+
+    .podcast__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 350px);
+        justify-content: space-between;
+
+        &__card1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        &__card2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        &__card3 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        &__card4 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        &__card5 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        &__card6 {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        &__card7 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        &__card8 {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+
+        &__card9 {
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+    }
+}
+
+@media screen and (max-width:410px) {
+    .podcast__title {
+        font-size: 26px;
+    }
+
+    .podcast__citation {
+        font-size: 24px;
+    }
+
+    .podcast__container {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 350px);
+        justify-content: space-between;
+
+        &__card1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        &__card2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        &__card3 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        &__card4 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+        }
+
+        &__card5 {
+            grid-column: 1/2;
+            grid-row: 5/6;
+        }
+
+        &__card6 {
+            grid-column: 1/2;
+            grid-row: 6/7;
+        }
+
+        &__card7 {
+            grid-column: 1/2;
+            grid-row: 7/8;
+        }
+
+        &__card8 {
+            grid-column: 1/2;
+            grid-row: 8/9;
+        }
+
+        &__card9 {
+            grid-column: 1/2;
+            grid-row: 9/10;
+        }
+    }
 }

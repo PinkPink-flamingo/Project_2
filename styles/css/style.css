@@ -732,11 +732,11 @@ img {
   grid-template-columns: 55% 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   font-family: Moniqa;
-  height: 700px;
+  height: 500px;
   border-top: solid #FB016B 5px;
-  background-image: url(/assets/images/imageFooter.png);
+  background-color: #000000;
+  background-image: url(/assets/images/imageFooterOld.png);
   background-repeat: no-repeat;
-  background-size: cover;
   text-decoration: none;
 }
 .footer__contacts {
@@ -779,7 +779,6 @@ img {
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
-  padding-top: 50px;
 }
 .footer .footer__menuList-item {
   font-family: "Moniqa-LightParagraph";

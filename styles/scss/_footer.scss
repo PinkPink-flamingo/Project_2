@@ -3,11 +3,12 @@
     grid-template-columns: 55% 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     font-family: Moniqa;
-    height: 700px;
+    height: 500px;
     border-top: solid $pink-color 5px;
-    background-image: url(/assets/images/imageFooter.png);
+    background-color: $bg-color;
+    background-image: url(/assets/images/imageFooterOld.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     text-decoration: none;
 
 
@@ -54,7 +55,7 @@
         flex-direction: column;
         justify-content: space-between;
         list-style: none;
-        padding-top: 50px;
+        // padding-top: 30%;
         // padding-left: 5%;
         // padding-right: 5%;
 

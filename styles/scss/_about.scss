@@ -124,7 +124,10 @@ grid-template-columns: 18.5% 81.5%;
             }
         }
     }
-
+}
+#burger {
+    display: none;
+}
     @media screen and (max-width: 730px) {
     [for=burger] {
         display: block;
@@ -174,7 +177,7 @@ grid-template-columns: 18.5% 81.5%;
             line-height: 80px;
         }
         &-prof {
-            margin-top: 65%;
+            margin-top: 45%;
         }
         &-passage {
         display: none;
@@ -185,4 +188,3 @@ grid-template-columns: 18.5% 81.5%;
     }
 }
 
-}

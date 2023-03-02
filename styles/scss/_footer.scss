@@ -1,5 +1,4 @@
 .footer {
-     
     display: grid;
     grid-template-columns: 55% 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -11,7 +10,7 @@
     background-repeat: no-repeat;
     // background-size: cover;
     text-decoration: none;
-
+}
 
 
     &__contacts {
@@ -75,7 +74,7 @@
             transition: all .5s ease 0s;
         }
     }
-}
+
 
 @media screen and (max-width: 1024px) {
     .footer {

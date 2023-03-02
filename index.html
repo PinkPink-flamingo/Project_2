@@ -8,7 +8,24 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .img {
+      height: 800px;
+      width: 1200px;
+      left: -251px;
+      top: 6419px;
+      border-radius: 0px;
+      box-sizing: border-box;
+
+      position: absolute;
+      width: 1200px;
+      height: 800px;
+
+      background: url(IMG_DD63734778D0-1.jpg);
+      border-left: 5px solid #FB016B;
+    }
+  </style>
 </head>
 
 <body>
@@ -62,6 +79,7 @@
       <div class="education__#">Образование нашего психолога. Есть информация в ТЗ, хотелось бы еще сканы дипломов
         сюда.
         <div class="education">
+          <img src="/images/IMG_DD63734778D0-1 1.png" alt="фото">
           <h2> ДИПЛОМЫ И СЕРТИФИКАТЫ</h2>
 
           <div class="slideshow-container">
@@ -141,34 +159,7 @@
     <div class="footer__#"> Иконки с соцсетями</div>
     <div class="footer__#"> что-нибудь</div>
   </footer>
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
 </body>
 
 </html>

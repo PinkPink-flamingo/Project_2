@@ -198,6 +198,7 @@ img {
   .requests__wrap-list {
     max-height: 600px;
   }
+
   .requests__list {
     padding: 35px 20px;
     margin-top: 10px;
@@ -232,6 +233,7 @@ img {
   .requests__wrap-list {
     max-height: 500px;
   }
+
   .requests__list {
     margin-top: 0px;
   }
@@ -263,16 +265,20 @@ img {
     line-height: 32px;
     margin-bottom: 43px;
   }
+
   .requests__citation {
     font-size: 30px;
     line-height: 50px;
   }
+
   .requests__list-item {
     font-size: 17px;
   }
+
   .requests__wrap-list {
     max-height: 450px;
   }
+
   .requests__wrap-first {
     margin-bottom: 30px;
   }
@@ -283,6 +289,7 @@ img {
     line-height: 30px;
     margin-bottom: 23px;
   }
+
   .requests__citation {
     font-size: 24px;
   }
@@ -292,6 +299,7 @@ img {
     top: 26px;
     max-height: 425px;
   }
+
   .requests__list-item {
     font-size: 15px;
   }
@@ -301,6 +309,7 @@ img {
     height: 7px;
     border-radius: 2px;
   }
+
   .requests__wrap-image {
     transform: translateX(-20%);
   }
@@ -315,9 +324,11 @@ img {
     max-height: 550px;
     border-top: 5px solid #FB016B;
   }
+
   .requests__wrap-image {
     display: none;
   }
+
   .requests__list-item {
     font-size: 20px;
     margin-bottom: 15px;
@@ -328,12 +339,14 @@ img {
     height: 10px;
     border-radius: 3px;
   }
+
   .requests__consultation {
     margin-top: 40px;
   }
   .requests__consultation-button {
     font-size: 30px;
   }
+
   .requests__consultation-terms-text {
     font-size: 14px;
     margin-bottom: 7px;
@@ -501,15 +514,17 @@ img {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   .podcast__title {
     margin-bottom: 23px;
   }
 }
 @media screen and (max-width: 730px) {
   .podcast__title,
-  .podcast__citation {
+.podcast__citation {
     font-size: 30px;
   }
+
   .podcast__citation {
     line-height: 60px;
   }
@@ -518,6 +533,7 @@ img {
   .podcast__title {
     font-size: 26px;
   }
+
   .podcast__citation {
     font-size: 24px;
     line-height: 50px;
@@ -682,6 +698,7 @@ img {
   .requests__wrap-list {
     max-height: 600px;
   }
+
   .requests__list {
     padding: 35px 20px;
     margin-top: 10px;
@@ -716,6 +733,7 @@ img {
   .requests__wrap-list {
     max-height: 500px;
   }
+
   .requests__list {
     margin-top: 0px;
   }
@@ -747,16 +765,20 @@ img {
     line-height: 32px;
     margin-bottom: 43px;
   }
+
   .requests__citation {
     font-size: 30px;
     line-height: 50px;
   }
+
   .requests__list-item {
     font-size: 17px;
   }
+
   .requests__wrap-list {
     max-height: 450px;
   }
+
   .requests__wrap-first {
     margin-bottom: 30px;
   }
@@ -767,6 +789,7 @@ img {
     line-height: 30px;
     margin-bottom: 23px;
   }
+
   .requests__citation {
     font-size: 24px;
   }
@@ -776,6 +799,7 @@ img {
     top: 26px;
     max-height: 425px;
   }
+
   .requests__list-item {
     font-size: 15px;
   }
@@ -785,6 +809,7 @@ img {
     height: 7px;
     border-radius: 2px;
   }
+
   .requests__wrap-image {
     transform: translateX(-20%);
   }
@@ -799,9 +824,11 @@ img {
     max-height: 550px;
     border-top: 5px solid #FB016B;
   }
+
   .requests__wrap-image {
     display: none;
   }
+
   .requests__list-item {
     font-size: 20px;
     margin-bottom: 15px;
@@ -812,23 +839,28 @@ img {
     height: 10px;
     border-radius: 3px;
   }
+
   .requests__consultation {
     margin-top: 40px;
   }
   .requests__consultation-button {
     font-size: 30px;
   }
+
   .requests__consultation-terms-text {
     font-size: 14px;
     margin-bottom: 7px;
   }
 }
 .footer {
+  position: absolute;
+  bottom: 0;
   display: grid;
   grid-template-columns: 55% 2fr 1fr;
   grid-template-rows: 1fr 1fr;
   font-family: Moniqa;
   height: 700px;
+  width: 100%;
   border-top: solid #FB016B 5px;
   background-image: url(/assets/images/imageFooter.png);
   background-repeat: no-repeat;
@@ -887,10 +919,12 @@ img {
     grid-template-columns: 40% 2fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
   .footer__menu {
     grid-row: 2;
     grid-column: 3;
   }
+
   .footer__contacts {
     grid-row: 2;
     grid-column: 2;
@@ -904,9 +938,11 @@ img {
     grid-template-rows: 1fr 1fr;
     background-position: -300px 0;
   }
+
   .footer__menu {
     display: none;
   }
+
   .footer__contacts {
     grid-row: 2;
     grid-column: 2;
@@ -920,9 +956,8 @@ img {
     background-image: none;
     background-color: #000000;
   }
+
   .footer__menu {
     display: none;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

@@ -1,16 +1,19 @@
 @font-face {
     src: url(/assets/fonts/BadScript-Regular.ttf); // Путь к "рукописному шрифту 
-    font-family: BadScript-Regular;
+    font-family: 'BadScript-Regular';
 }
+
 @font-face {
     src: url(/assets/fonts/Moniqa-LightParagraph.ttf); //Путь к "тонкому шрифту
-    font-family:Moniqa-LightParagraph;
+    font-family: 'Moniqa-LightParagraph';
 }
+
 @font-face {
     src: url(/assets/fonts/Moniqa-MediumHeading.ttf); // Путь к шрифту-Заголовок
-    font-family:Moniqa-MediumHeading;
+    font-family: 'Moniqa-MediumHeading';
 }
+
 @font-face {
     src: url(/assets/fonts/Moniqa-SemiBoldParagraph.ttf); // Путь к шрифту-Заголовок блока
-    font-family:Moniqa-SemiBoldParagraph;
+    font-family: 'Moniqa-SemiBoldParagraph';
 }

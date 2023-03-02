@@ -18,6 +18,7 @@
 :after,
 :before {
   -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -52,17 +53,11 @@ img {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  column-gap: 10px;
   grid-template-rows: repeat(3, 325px);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .podcast__container__card1 {
   grid-column: 1/2;
@@ -107,32 +102,20 @@ img {
 .podcast__container .card .face {
   width: 300px;
   height: 200px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 .podcast__container .card .face.face1 {
   position: relative;
   background: #000000;
   border: 1px solid #FB016B;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
-  -webkit-transform: translateY(100px);
-      -ms-transform: translateY(100px);
-          transform: translateY(100px);
+  transform: translateY(100px);
 }
 .podcast__container .card .face.face1 .content {
   opacity: 0.2;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
   transition: 0.5s;
 }
 .podcast__container .card .face.face1 .content img {
@@ -141,21 +124,12 @@ img {
 .podcast__container .card .face.face2 {
   position: relative;
   background: #D9D9D9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: translateY(-100px);
-      -ms-transform: translateY(-100px);
-          transform: translateY(-100px);
+  box-sizing: border-box;
+  transform: translateY(-100px);
 }
 .podcast__container .card .face.face2 .content p {
   margin: 0;
@@ -178,9 +152,7 @@ img {
 }
 .podcast__container :hover .face.face1 {
   background: #FB016B;
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 .podcast__container :hover .face.face1 .content {
   opacity: 1;
@@ -192,9 +164,7 @@ img {
   max-width: 100px;
 }
 .podcast__container :hover .face.face2 {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .podcast__container .card .face.face2 .content a:hover {
@@ -216,15 +186,9 @@ img {
 
 .podcast__link {
   margin: 15px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .podcast {
@@ -233,14 +197,9 @@ img {
 
 @media screen and (max-width: 995px) {
   .podcast__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .podcast__title {
     margin-bottom: 23px;
@@ -264,3 +223,5 @@ img {
     line-height: 50px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

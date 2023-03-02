@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url(/assets/fonts/BadScript-Regular.ttf);
   font-family: BadScript-Regular;
@@ -46,14 +47,15 @@ img {
 }
 .header-meny__li {
   list-style-type: none;
+  padding: 0.2em 1.2em 0.2em 1.2em;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 .header-meny__li-a {
   text-decoration: none;
   color: #ffffff;
 }
 .header-meny__li:hover {
-  padding: 0.2em 1.2em 0.2em 1.2em;
-  border-radius: 10px;
   background-color: #FB016B;
 }
 
@@ -128,7 +130,7 @@ img {
   margin-top: 40px;
   position: absolute;
   max-width: 800px;
-  background-color: #D9D9D9;
+  background-color: #000000;
   border-radius: 40px;
   border: none;
   transition: 0.8s;
@@ -136,20 +138,82 @@ img {
   opacity: 0;
 }
 .about__button-terms-text {
-  font-family: "Moniqa-MediumHeading";
   font-size: 18px;
-  font-weight: bold;
-  color: #000000;
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 10px;
 }
 .about__button #check_label {
   display: none;
 }
-.about__button #check_label:checked ~ .requests__consultation-terms {
+.about__button #check_label:checked ~ .about__button-terms {
   display: block;
   height: auto;
   opacity: 1;
+}
+@media screen and (max-width: 880px) {
+  .about .about__text {
+    margin-left: 2%;
+  }
+  .about .about__text-title {
+    margin-top: 15%;
+  }
+  .about .about__text-passage {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .about [for=burger] {
+    display: block;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    right: 20px;
+    top: 20px;
+    margin: 1.6em;
+  }
+  .about [for=burger]::before {
+    content: "☰";
+  }
+  .about nav {
+    display: none;
+    position: absolute;
+    right: 70px;
+    top: 0;
+    margin-top: 30px;
+    width: 35%;
+    user-select: none;
+  }
+  .about .header-meny {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .about #burger:checked + label + nav {
+    display: block;
+  }
+  .about #burger:checked + [for=burger]::before {
+    content: "✕";
+  }
+  .about .about__text {
+    margin-left: 1%;
+  }
+  .about .about__text-title {
+    margin-top: 25%;
+    font-size: 66px;
+    line-height: 80px;
+  }
+  .about .about__text-prof {
+    margin-top: 65%;
+  }
+  .about .about__text-passage {
+    display: none;
+  }
+  .about .about__text-moscow {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

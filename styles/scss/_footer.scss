@@ -1,13 +1,13 @@
 
 .footer {
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 0;
     display: grid;
     grid-template-columns: 55% 2fr 1fr ;
     grid-template-rows: 1fr 1fr;
     font-family: Moniqa;
     height: 700px;
-    width: 100%;
+    // width: 100%;
     border-top: solid $pink-color 5px;
     background-image: url(/assets/images/imageFooter.png);
     background-repeat: no-repeat;

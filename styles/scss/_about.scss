@@ -26,6 +26,7 @@ grid-template-columns: 18.5% 81.5%;
 
     padding-left: 8%;
     padding-right: 5%;
+    margin-bottom: 8%;
 
     &__text {
         grid-template-areas: 1/2/1/2;
@@ -82,7 +83,7 @@ grid-template-columns: 18.5% 81.5%;
         &-terms {
             margin-top: 40px;
             position: absolute;
-            max-width: 800px;
+            max-width: 1000px;
             background-color: $bg-color;
             border-radius: 40px;
             border: none;
@@ -110,9 +111,14 @@ grid-template-columns: 18.5% 81.5%;
             }
         }
     
-    }    
-    @media screen and (max-width: 880px) {
-    .about__text{
+    }
+}  
+
+@media screen and (max-width: 885px) {
+    .about {
+        margin-bottom: 20%;
+    
+    &__text{
         margin-left: 2%;
 
             &-title {
@@ -125,6 +131,7 @@ grid-template-columns: 18.5% 81.5%;
         }
     }
 }
+
 #burger {
     display: none;
 }
@@ -178,6 +185,26 @@ grid-template-columns: 18.5% 81.5%;
         }
         &-prof {
             margin-top: 45%;
+        }
+        &-passage {
+        display: none;
+        }
+        &-moscow {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 410px) {
+    .about__text{
+        margin-left:1%;
+
+        &-title {
+            margin-top: 30%;
+            font-size: 66px;
+            line-height: 80px;
+        }
+        &-prof {
+            margin-top: 65%;
         }
         &-passage {
         display: none;

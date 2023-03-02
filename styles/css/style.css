@@ -64,6 +64,7 @@ img {
   grid-template-columns: 18.5% 81.5%;
   padding-left: 8%;
   padding-right: 5%;
+  margin-bottom: 8%;
 }
 .about__text {
   grid-template-areas: 1/2/1/2;
@@ -129,7 +130,7 @@ img {
 .about__button-terms {
   margin-top: 40px;
   position: absolute;
-  max-width: 800px;
+  max-width: 1000px;
   background-color: #000000;
   border-radius: 40px;
   border: none;
@@ -151,19 +152,22 @@ img {
   height: auto;
   opacity: 1;
 }
-@media screen and (max-width: 880px) {
-  .about .about__text {
+
+@media screen and (max-width: 885px) {
+  .about {
+    margin-bottom: 20%;
+  }
+  .about__text {
     margin-left: 2%;
   }
-  .about .about__text-title {
+  .about__text-title {
     margin-top: 15%;
   }
-  .about .about__text-passage {
+  .about__text-passage {
     font-size: 30px;
     line-height: 42px;
   }
 }
-
 #burger {
   display: none;
 }
@@ -212,6 +216,25 @@ img {
   }
   .about__text-prof {
     margin-top: 45%;
+  }
+  .about__text-passage {
+    display: none;
+  }
+  .about__text-moscow {
+    display: none;
+  }
+}
+@media screen and (max-width: 410px) {
+  .about__text {
+    margin-left: 1%;
+  }
+  .about__text-title {
+    margin-top: 30%;
+    font-size: 66px;
+    line-height: 80px;
+  }
+  .about__text-prof {
+    margin-top: 65%;
   }
   .about__text-passage {
     display: none;

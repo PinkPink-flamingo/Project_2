@@ -122,10 +122,12 @@ img {
   font-size: 40px;
   line-height: 42px;
   color: #ffffff;
+  transition: all 0.5s ease 0s;
   padding: 25px 85px;
 }
 .about__button-button:hover {
   opacity: 0.85;
+  transition: all 1s ease 0s;
 }
 .about__button-terms {
   margin-top: 40px;
@@ -516,10 +518,12 @@ img {
   font-size: 40px;
   line-height: 42px;
   color: #ffffff;
+  transition: all 0.5s ease 0s;
   padding: 25px 85px;
 }
 .requests__consultation-button:hover {
   opacity: 0.85;
+  transition: all 1s ease 0s;
 }
 
 .requests__consultation-terms {

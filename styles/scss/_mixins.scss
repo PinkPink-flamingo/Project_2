@@ -33,9 +33,11 @@
     font-size: 40px;
     line-height: 42px;
     color: $white-color;
+    transition: all .5s ease 0s;
 
     &:hover {
         opacity: .85;
+        transition: all 1s ease 0s;
     }
 }
 

@@ -10,52 +10,317 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
-
-
 </head>
 
 <body>
 
   <header class="header">
-    <nav class="#">
-      <ul class="#">
-        <li class="#">
-          <a class="#" href="#">Обо мне</a>
+    <input type="checkbox" id="burger">
+    <label for="burger"></label>
+    <nav class="meny" id="header__menu">
+      <ul class="meny header-meny">
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n2">Подкасты</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Подкасты</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n3">Запросы</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Отзывы</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n5">Образование</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Образование</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n4">Отзывы</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Запросы</a>
-        </li>
-        <li class="#">
-          <a class="#" href="#">Услуги</a>
-        </li>
-        <li class="#">
-          <a class="#" href="#">Контакты</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n6">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
+
   <main class="main">
-    <section class="about">
-      <div class="about__#">ФИО, фото
+    <section class="about" id="n1">
+      <div class="about__text">
+        <h1 class="about__text-title">ЮЛИЯ <br>
+          АНПИЛОГОВА
+        </h1>
+        <p class="about__text-prof">психолог, психотерапевт</p>
+        <p class="about__text-moscow">г.Москва <br>Член Общероссийской Профессиональной <br>Психотерапевтической Лиги
+          (ОППЛ)
+        </p>
+        <p class="about__text-passage">« <span class="about__text-passage-i">Я </span> искренне люблю людей и считаю,
+          <br> что на свете нет ничего интереснее»
+        </p>
+      </div>
+      <img class="about__photo" src="/assets/images/about-foto.jpg" alt="photo">
+      <div class="about__button">
+        <label class="about__button-button" for="check_label">Обо мне</label>
+        <input type="checkbox" id="check_label" name="Обо мне">
+        <div class="about__button-terms">
+          <p class="about__button-terms-text">Я помогаю строить осознанную жизнь, поскольку верю, что такая жизнь может
+            быть захватывающе интересной.
+            Наблюдая за моими клиентами в процессе психотерапии, я вижу, что осознанность начинается с хорошего контакта
+            с
+            самим собой. Этот контакт опирается на знания о себе, рождает жажду реализовать свои планы и мечты, помогает
+            строить доверительные и уважительные отношения, а также придаёт силы принимать на себя всё большую
+            ответственность за собственную жизнь. Я верю, что осознанность помогает управлять своей жизнью, принося при
+            этом
+            полную удовлетворённость.</p>
+          <p class="about__button-terms-text">За моей спиной учёба на факультете Психологического консультирования
+            МГППУ, специализация в терапевтическом
+            методе (символдрама), более 300 часов личной терапии, более 1000 часов повышения квалификации и около 80
+            тренинговых дней, 13-летний опыт ведения индивидуальной работы и терапевтических групп, десятки отзывов
+            благодарных клиентов. Мой рабочий метод — Символдрама (кататимно-имагинативная психотерапия, КИП) — это
+            работа
+            с
+            образами при помощи воображения, чья эффективность доказана клиническими исследованиями.</p>
+          <p class="about__button-terms-text">За 13 лет частной практики в индивидуальном и групповом формате я нашла
+            свой главный интерес — мне нравится
+            сопровождать возрастные кризисы и особенно кризис 30 лет. Несмотря на условность цифры (она условна,
+            поскольку
+            границы кризиса очень индивидуальны и колеблются в пределах 24–35 лет), происходящие на этом рубеже процессы
+            максимально конкретны — личности человека предстоит существенная переплавка, и психотерапия в этом периоде
+            способна принести самые высокие жизненные дивиденды.</p>
+        </div>
+      </div>
+
+    </section>
+    <section class="podcast">
+      <div class="container">
+        <h2 id="n2" class="podcast__title">Подкасты</h2>
+        <div class="podcast__container">
+          <div class="card" id="podcast__card1">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon1">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Про адаптацию к переезду</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000584028893">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card2">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon2">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Про созависимость</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000548789740">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card3">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon3">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Возрастные кризисы</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000546188527">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card4">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon4">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Про измены</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000542332578">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card5">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon5">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Про отношения с телом</p>
+                <div class="podcast__link">
+                  <a
+                    href="https://podcasts.apple.com/ru/podcast/она-сказала-он-сказал/id1538224024?i=1000526007506">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card6">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon6">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Предназначение</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000507272150 ">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card7">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon7">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Про проекции</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000497172046">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card8">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon8">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Женщины которые любят слишком сильно</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000476396302">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="podcast__card9">
+            <div class="face face1">
+              <div class="content">
+                <img
+                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                  alt="icon9">
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p class="podcast__title">Первая беременность</p>
+                <div class="podcast__link">
+                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000467189299">Послушать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="podcast__citation">“Мне нравится видеть как преломляется одна и та же психологическая тема<br> в
+          разных судьбах и характерах, видеть как каждый клиент находит <br> свой уникальный маршрут индивидуализации.”
+        </p>
       </div>
     </section>
+    <!--Podcast end-->
 
-    <section class="podcast">
-      <div class="podcast__#">Карточки со ссылками-переходами на подкасты</div>
-    </section>
-
+    <!--Requests start-->
     <section class="requests">
-      <div class="requests__#"> Запросы. То, с чем можно обрптиться к психологу, условия консультации онлайн</div>
+      <div class="container">
+        <h2 id="n3" class="requests__title">Ваши запросы для индивидуальной работы</h2>
+        <!--блок запросы-->
+        <div class="requests__wrap-first">
+          <div class="requests__wrap-list">
+            <ul class="requests__list">
+              <li class="requests__list-item">Эмоциональные проблемы (апатия, гнев, зависть, ненависть, ощущение
+                проживания «не своей жизни»);</li>
+              <li class="requests__list-item">партнерские взаимоотношения (индивидуально, измены в паре, разводы,
+                расставания);</li>
+              <li class="requests__list-item">фобические расстройства;</li>
+              <li class="requests__list-item">депрессивные состояния;</li>
+              <li class="requests__list-item">тревожные расстройства (панические атаки);</li>
+              <li class="requests__list-item">личностные кризисы (возрастные, социальные);</li>
+              <li class="requests__list-item">травматические состояния (травмы, переживание утраты);</li>
+              <li class="requests__list-item">работа со сновидениями.</li>
+            </ul>
+          </div>
+          <div class="requests__wrap-image">
+            <img class="requests__image" src="assets/images/img-requests.png" alt="img-requests">
+          </div>
+        </div>
+        <!--блок консультации онлайн, условия-->
+        <div class="requests__wrap-second">
+          <div class="requests__wrap-consultation">
+            <h2 class="requests__title">Консультации онлайн</h2>
+
+            <div class="requests__consultation">
+              <label class="requests__consultation-button" for="check_label">Условия</label>
+              <input type="checkbox" id="check_label" name="Условия">
+              <div class="requests__consultation-terms">
+                <p class="requests__consultation-terms-text">Стоимость сессии – 8000₽, цена неизменна в течение года,
+                  повышается обычно в начале января.</p>
+                <p class="requests__consultation-terms-text">Длительность сессии – 55 минут, начинается вашим звонком
+                  мне. Будьте внимательны: для работы я всегда озвучиваю московское время. </p>
+                <p class="requests__consultation-terms-text">Работа онлайн накладывает определенные ограничения и несёт
+                  риски (неполадки со связью, например), поэтому соглашаясь на такой формат, вы принимаете эти риски.
+                  Сессия длится ровно 55 минут и время, потраченное на восстановление связи, входит тоже.</p>
+                <p class="requests__consultation-terms-text">Я работаю по 100% предоплате на карту АО «Россельхозбанка»
+                  за 2 дня до назначенного времени. Фактом подтверждения предоплаты, является присланный вами чек. А
+                  саму оплату я расцениваю как ваше согласие с условиями работы, и на основании ее бронирую выбранное
+                  время за вами. </p>
+                <p class="requests__consultation-terms-text">Отмена сессии возможна за 24 часа до ее начала, при
+                  нарушении этого правила деньги полностью удерживаются. Перенос возможен так же не менее чем за 24 часа
+                  и только при наличии свободного времени в расписании, если такого нет - я верну вам деньги. В случае
+                  опоздания, сессия ограничивается на время опоздания. Поэтому рекомендую начинать звонок вовремя. </p>
+                <p class="requests__consultation-terms-text">Обычная практика терапии предполагает частоту сессий 1 раз
+                  в неделю. Более частые встречи возможны, если вы видите в этом необходимость, и я с вами согласна.
+                  Более редкие сессии не обеспечивают достаточной интенсивности и скорее являются поддерживающим
+                  форматом или носят характер консультаций. </p>
+                <p class="requests__consultation-terms-text">Остальные правила, касающиеся хода терапевтической работы,
+                  я озвучу непосредственно на сессии. Обычно это занимает 5-10 минут.</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="requests__wrap-citation">
+            <p class="requests__citation">“Для меня, большое удовольствие<br>наблюдать особенности каждой Вселенной,
+              заключённой<br>в человеке напротив”</p>
+          </div>
+        </div>
+
+      </div>
     </section>
+    
+
+<!--блок feedback -->
+   
 
     <section class="feedback">
       <div class="container">
@@ -160,19 +425,60 @@
       </script>
       </div>
     </section>
+<!--блок feedback закончился-->
+   
 
+
+  
+    <!--Education start-->
     <section class="education">
-      <div class="education__#">Образование нашего психолога. Есть информация в ТЗ, хотелось бы еще сканы дипломов
-        сюда.
-      </div>
     </section>
+    <!--Education end-->
 
   </main>
 
+
   <footer class="footer">
-    <div class="footer__#"> Повторение меню из хедера</div>
-    <div class="footer__#"> Иконки с соцсетями</div>
-    <div class="footer__#"> что-нибудь</div>
+    <div class="footer__contacts">
+      <h2 class="footer__title" id="n6"> КОНТАКТЫ</h2>
+      <ul class="footer__contactsList">
+
+        <li class="footer__contactsList-item">
+          <img src="assets/vectors/phone.png" alt="vector">
+          <a class="media"> +79055667727</a>
+        </li>
+        <li class="footer__contactsList-item">
+          <img src="assets/vectors/instagram.png" alt="vector">
+          <a class="media" href=" https://www.instagram.com/julia_anpilogova/">
+            https://www.instagram.com/julia_anpilogova/</a>
+        </li>
+
+        <li class="footer__contactsList-item">
+          <img src="assets/vectors/telegram.svg" alt="vector">
+          <a class="media" href="https://t.me/anpi_lo">https://t.me/anpi_lo</a>
+        </li>
+      </ul>
+
+    </div>
+    <nav class="menu footer__menu" id="footer__menu">
+      <ul class="footer__menuList">
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n1">Главная</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n2">Подкасты</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n3">Запросы</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n4">Отзывы</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n5">Cертификаты</a>
+        </li>
+      </ul>
+    </nav>
   </footer>
 </body>
 

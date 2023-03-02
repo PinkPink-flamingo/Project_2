@@ -1,0 +1,333 @@
+// Requests-section start
+.requests__title {
+    @include font-section-title;
+    margin-bottom: 63px;
+}
+
+//first block start
+// element list
+.requests__wrap-first {
+    display: flex;
+    margin-bottom: 0px;
+}
+
+.requests__wrap-list {
+    max-width: 482px;
+    max-height: 790px;
+    overflow: hidden;
+    background-color: $grey-color;
+    position: relative;
+    top: 56px;
+    left: 0px;
+    z-index: 0;
+}
+
+.requests__list {
+    margin: 0px;
+    list-style: none;
+    padding: 70px 40px;
+    color: $bg-color;
+
+    &-item {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        font-family: 'Moniqa-MediumHeading';
+
+        &::before {
+            content: '';
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            background-color: $pink-color;
+        }
+
+        &:hover {
+            color: $pink-color;
+            transition: all .4s;
+            transform: scale(1.05);
+        }
+
+    }
+}
+
+//element image
+.requests__wrap-image {
+    position: relative;
+    width: 939px;
+    z-index: -1;
+    transform: translateX(-10%);
+
+    &::before {
+        content: '';
+        display: block;
+        height: 10px;
+        background-color: $pink-color;
+    }
+}
+
+.requests__image {
+    max-width: 100%;
+}
+
+//first block end
+
+//second block start
+
+.requests__wrap-second {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-20%)
+}
+
+.requests__consultation-button {
+    @include button;
+    padding: 25px 85px;
+}
+
+.requests__consultation-terms {
+    margin-top: 40px;
+    position: absolute;
+    max-width: 800px;
+    background-color: $grey-color;
+    border-radius: 40px;
+    border: none;
+    transition: .8s;
+    padding: 25px;
+    opacity: 0;
+
+    &-text {
+        font-family: 'Moniqa-MediumHeading';
+        font-size: 18px;
+        font-weight: bold;
+        color: $bg-color;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+#check_label {
+    display: none;
+
+    &:checked~.requests__consultation-terms {
+        display: block;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+
+.requests__wrap-consultation {
+    margin-bottom: 80px;
+}
+
+.requests__wrap-citation {
+    display: flex;
+    justify-content: end;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.requests__citation {
+    @include font-citation;
+    line-height: 70px;
+}
+
+
+//second block end
+.requests {
+    margin-bottom: 40px;
+}
+
+
+//Media for Requests-section start
+
+@media screen and (max-width:1180px) {
+    .requests__wrap-second {
+        transform: none;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .requests__wrap-list {
+        max-height: 600px;
+    }
+
+    .requests__list {
+        padding: 35px 20px;
+        margin-top: 10px;
+
+        &-item {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            &::before {
+                content: '';
+                margin-right: 5px;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1003px) {
+    .requests__list-item {
+        margin-bottom: 25px;
+
+        &::before {
+            content: '';
+            margin-bottom: 3px;
+        }
+    }
+}
+
+@media screen and (max-width:963px) {
+    .requests__list-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .requests__wrap-list {
+        max-height: 500px;
+    }
+
+    .requests__list {
+        margin-top: 0px;
+
+        &-item {
+            font-size: 20px;
+
+            &::before {
+                content: '';
+                margin-right: 5px;
+                margin-bottom: 2px;
+                width: 10px;
+                height: 10px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:902px) {
+    .requests__list-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:832px) {
+    .requests__list-item {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .requests__title {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 43px;
+    }
+
+    .requests__citation {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .requests__list-item {
+        font-size: 17px;
+    }
+
+    .requests__wrap-list {
+        max-height: 450px;
+    }
+
+    .requests__wrap-first {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .requests__title {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 23px;
+    }
+
+    .requests__citation {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .requests__wrap-list {
+        top: 26px;
+        max-height: 425px;
+    }
+
+    .requests__list-item {
+        font-size: 15px;
+
+        &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 2px;
+        }
+    }
+
+    .requests__wrap-image {
+        transform: translateX(-20%);
+
+        &::before {
+            content: "";
+            height: 5px;
+        }
+    }
+}
+
+@media screen and (max-width:572px) {
+    .requests__wrap-list {
+        top: 0px;
+        max-height: 550px;
+        border-top: 5px solid $pink-color;
+    }
+
+    .requests__wrap-image {
+        display: none;
+    }
+
+    .requests__list-item {
+        font-size: 20px;
+        margin-bottom: 15px;
+
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+        }
+    }
+
+    .requests__consultation {
+        margin-top: 40px;
+
+        &-button {
+            font-size: 30px;
+        }
+    }
+
+    .requests__consultation-terms-text {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+}
+
+//Media for Requests-section end
+
+// Requests-section end

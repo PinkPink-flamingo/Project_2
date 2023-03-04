@@ -61,19 +61,17 @@ img {
 
 .about {
   display: grid;
-  grid-template-columns: 18.5% 81.5%;
-  padding-left: 8%;
-  padding-right: 5%;
-  margin-bottom: 8%;
+  grid-template-columns: 60% 40%;
 }
 .about__text {
   grid-template-areas: 1/2/1/2;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-top: 10%;
 }
 .about__text-title {
-  position: absolute;
-  margin-top: 25%;
   font-family: Moniqa-MediumHeading;
   font-weight: 500;
   font-size: 96px;
@@ -81,21 +79,17 @@ img {
   color: #FB016B;
 }
 .about__text-prof {
-  position: absolute;
-  margin-top: 45%;
-}
-.about__text-moscow {
-  position: absolute;
-  margin-top: 50%;
+  font-family: "Moniqa";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 25px;
 }
 .about__text-passage {
-  position: absolute;
-  margin-top: 65%;
   margin-left: -4%;
   font-family: "BadScript-Regular";
   font-style: italic;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 44px;
   line-height: 52px;
   color: #ffffff;
 }
@@ -103,13 +97,17 @@ img {
   color: #FB016B;
 }
 .about__photo {
-  grid-template-areas: 2/3/2/3;
+  grid-column: 2;
+  background-image: url(/Assets/images/about.png);
+  background-repeat: no-repeat;
+  background-position: -100px 0;
 }
-.about__button {
-  width: 273px;
-  height: 92px;
+
+#burger {
+  display: none;
 }
-.about__button-button {
+
+.about-button-button {
   width: 273px;
   height: 92px;
   border: none;
@@ -125,75 +123,91 @@ img {
   transition: all 0.5s ease 0s;
   padding: 25px 85px;
 }
-.about__button-button:hover {
+.about-button-button:hover {
   opacity: 0.85;
   transition: all 1s ease 0s;
 }
+
 .about__button-terms {
   margin-top: 40px;
   position: absolute;
   max-width: 1000px;
-  background-color: #000000;
+  background-color: #D9D9D9;
   border-radius: 40px;
   border: none;
   transition: 0.8s;
   padding: 25px;
   opacity: 0;
+  z-index: 5;
 }
 .about__button-terms-text {
-  font-size: 18px;
-  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
-.about__button #check_label {
+
+#check_label-about {
   display: none;
 }
-.about__button #check_label:checked ~ .about__button-terms {
+#check_label-about:checked ~ .about__button-terms {
   display: block;
   height: auto;
   opacity: 1;
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 1024px) {
   .about {
-    margin-bottom: 20%;
-  }
-  .about__text {
-    margin-left: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
   .about__text-title {
-    margin-top: 15%;
+    font-size: 64px;
+    line-height: 72px;
+    margin-top: 20%;
+  }
+  .about__text-prof {
+    font-size: 16px;
+    line-height: 18px;
   }
   .about__text-passage {
-    font-size: 30px;
-    line-height: 42px;
+    margin-top: 20%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 40%;
   }
 }
-#burger {
-  display: none;
+.about__photo {
+  grid-column: 2;
+  background-position: -150px 0;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 750px) {
   [for=burger] {
     display: block;
     position: absolute;
-    width: 30px;
     text-align: center;
-    right: 20px;
+    width: 20px;
+    right: 10px;
     top: 20px;
     margin: 1.6em;
   }
   [for=burger]::before {
     content: "☰";
+    color: #fb016b;
   }
   nav {
     display: none;
     position: absolute;
-    right: 70px;
+    right: 80px;
     top: 0;
     margin-top: 30px;
-    width: 35%;
+    width: 20%;
     user-select: none;
   }
   .header-meny {
@@ -208,41 +222,30 @@ img {
   #burger:checked + [for=burger]::before {
     content: "✕";
   }
-  .about__text {
-    margin-left: 1%;
+  .about {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 20%;
   }
   .about__text-title {
-    margin-top: 25%;
-    font-size: 66px;
-    line-height: 80px;
+    font-size: 64px;
+    line-height: 72px;
+    margin-top: 20%;
   }
   .about__text-prof {
-    margin-top: 45%;
+    font-size: 16px;
+    line-height: 18px;
   }
   .about__text-passage {
-    display: none;
+    margin-top: 20%;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 50%;
   }
-  .about__text-moscow {
-    display: none;
-  }
-}
-@media screen and (max-width: 410px) {
-  .about__text {
-    margin-left: 1%;
-  }
-  .about__text-title {
-    margin-top: 30%;
-    font-size: 66px;
-    line-height: 80px;
-  }
-  .about__text-prof {
-    margin-top: 65%;
-  }
-  .about__text-passage {
-    display: none;
-  }
-  .about__text-moscow {
-    display: none;
+  .about__photo {
+    background-position: -170px 0;
   }
 }
 .podcast__title {
@@ -769,6 +772,8 @@ img {
   list-style: none;
   padding: 2px;
   border-radius: 2px;
+  border: none;
+  background-color: transparent;
 }
 .footer__contacts .media:hover {
   background: #FB016B;

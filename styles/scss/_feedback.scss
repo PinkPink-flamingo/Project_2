@@ -4,7 +4,7 @@
 }
 
 .feedback__wrap-image {
-	border: 10px solid red;
+	
 	position: relative;
 	width: 939px;
 	margin-bottom: 50px;
@@ -32,4 +32,50 @@
 	width: 900px;
 	height: 700px;
 	margin-left: 200px;
+}
+
+@media screen and (max-width:730px) {
+
+    #n4{
+		font-size: 30px;	
+	}
+    .feedback__citation {
+        font-size: 23px;
+    }
+
+    .feedback__citation {
+        line-height: 50px;
+		text-align: right;
+		font-family: 'BadScript-Regular';
+		font-style: italic;
+    }
+
+	.feedback__wrap-image {
+
+		position: relative;
+		width: 439px;
+	}
+	.carousel-item {
+		width: 600px;
+		height: 400px;
+		margin-left: -70px;
+}
+}
+
+@media screen and (max-width:410px) {
+   
+    .feedback__citation {
+        font-size: 24px;
+        line-height: 50px;
+    }
+	.feedback__wrap-image {
+
+		position: relative;
+		width: 339px;
+}
+.carousel-item {
+	width: 400px;
+	height: 300px;
+	margin-left: -20px;
+}
 }

@@ -20,9 +20,16 @@
   }
 }
 
-.about {
+.about__wrap-main {
   display: grid;
   grid-template-columns: 60% 40%;
+  column-gap: 10px;
+}
+
+.about {
+  margin-bottom: 120px;
+  margin: 0px auto 120px;
+  padding: 0 15px;
 
 
   &__text {
@@ -35,18 +42,17 @@
   }
 
   &__text-title {
-    font-family: Moniqa-MediumHeading;
+    font-family: "Moniqa-MediumHeading";
     font-weight: 500;
     font-size: 96px;
     line-height: 100px;
     color: $pink-color;
+    margin: .60em 0;
   }
 
   &__text-prof {
-    font-family: "Moniqa";
-    font-weight: 300;
-    font-size: 24px;
     line-height: 25px;
+    margin: 0;
   }
 
   &__text-passage {
@@ -57,6 +63,7 @@
     font-size: 44px;
     line-height: 52px;
     color: $white-color;
+    margin-bottom: 60px;
   }
 
   &__text-passage-i {
@@ -65,10 +72,9 @@
 
   &__photo {
     grid-column: 2;
-    background-image: url(/Assets/images/about.png);
+    background-image: url(/assets/images/about.png);
     background-repeat: no-repeat;
-    background-position: -100px 0;
-
+    background-position: 50%;
   }
 }
 
@@ -76,7 +82,14 @@
   display: none;
 }
 
-.about-button-button {
+.about__wrap-button {
+  display: flex;
+  flex-direction: column;
+  margin: 75px;
+}
+
+
+.about__button-button {
   @include button;
   padding: 25px 85px;
 }
@@ -116,12 +129,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .about {
+  .about__wrap-main {
     display: grid;
     grid-template-columns: 50% 50%;
-
-
-
   }
 
   .about__text-title {
@@ -194,10 +204,10 @@
     content: '✕';
   }
 
-  .about {
+  .about__wrap-main {
     display: grid;
     grid-template-columns: 40% 60%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .about__text-title {
@@ -223,6 +233,15 @@
 
   .about__photo {
     background-position: -170px 0;
+  }
+
+}
+
+@media screen and (max-width: 470px) {
+  .about__wrap-button {
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
 }

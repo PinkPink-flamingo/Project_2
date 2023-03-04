@@ -59,9 +59,16 @@ img {
   background-color: #FB016B;
 }
 
-.about {
+.about__wrap-main {
   display: grid;
   grid-template-columns: 60% 40%;
+  column-gap: 10px;
+}
+
+.about {
+  margin-bottom: 120px;
+  margin: 0px auto 120px;
+  padding: 0 15px;
 }
 .about__text {
   grid-template-areas: 1/2/1/2;
@@ -72,17 +79,16 @@ img {
   margin-top: 10%;
 }
 .about__text-title {
-  font-family: Moniqa-MediumHeading;
+  font-family: "Moniqa-MediumHeading";
   font-weight: 500;
   font-size: 96px;
   line-height: 100px;
   color: #FB016B;
+  margin: 0.6em 0;
 }
 .about__text-prof {
-  font-family: "Moniqa";
-  font-weight: 300;
-  font-size: 24px;
   line-height: 25px;
+  margin: 0;
 }
 .about__text-passage {
   margin-left: -4%;
@@ -92,22 +98,29 @@ img {
   font-size: 44px;
   line-height: 52px;
   color: #ffffff;
+  margin-bottom: 60px;
 }
 .about__text-passage-i {
   color: #FB016B;
 }
 .about__photo {
   grid-column: 2;
-  background-image: url(/Assets/images/about.png);
+  background-image: url(/assets/images/about.png);
   background-repeat: no-repeat;
-  background-position: -100px 0;
+  background-position: 50%;
 }
 
 #burger {
   display: none;
 }
 
-.about-button-button {
+.about__wrap-button {
+  display: flex;
+  flex-direction: column;
+  margin: 75px;
+}
+
+.about__button-button {
   width: 273px;
   height: 92px;
   border: none;
@@ -123,7 +136,7 @@ img {
   transition: all 0.5s ease 0s;
   padding: 25px 85px;
 }
-.about-button-button:hover {
+.about__button-button:hover {
   opacity: 0.85;
   transition: all 1s ease 0s;
 }
@@ -160,7 +173,7 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-  .about {
+  .about__wrap-main {
     display: grid;
     grid-template-columns: 50% 50%;
   }
@@ -222,10 +235,10 @@ img {
   #burger:checked + [for=burger]::before {
     content: "✕";
   }
-  .about {
+  .about__wrap-main {
     display: grid;
     grid-template-columns: 40% 60%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .about__text-title {
     font-size: 64px;
@@ -246,6 +259,13 @@ img {
   }
   .about__photo {
     background-position: -170px 0;
+  }
+}
+@media screen and (max-width: 470px) {
+  .about__wrap-button {
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 .podcast__title {

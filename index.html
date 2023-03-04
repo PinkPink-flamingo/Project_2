@@ -8,47 +8,81 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/style.css">
-
-
 </head>
 
 <body>
 
   <header class="header">
-    <nav class="#">
-      <ul class="#">
-        <li class="#">
-          <a class="#" href="#">Обо мне</a>
+    <input type="checkbox" id="burger">
+    <label for="burger"></label>
+    <nav class="meny" id="header__menu">
+      <ul class="meny header-meny">
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n2">Подкасты</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Подкасты</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n3">Запросы</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Отзывы</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n5">Образование</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Образование</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n4">Отзывы</a>
         </li>
-        <li class="#">
-          <a class="#" href="#">Запросы</a>
-        </li>
-        <li class="#">
-          <a class="#" href="#">Услуги</a>
-        </li>
-        <li class="#">
-          <a class="#" href="#">Контакты</a>
+        <li class="header-meny__li">
+          <a class="header-meny__li-a" href="#n6">Контакты</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main">
-
-    <section class="about">
-      <div class="about__#">ФИО, фото
+    <section class="about" id="n1">
+      <div class="about__text">
+        <h1 class="about__text-title">ЮЛИЯ <br>
+          АНПИЛОГОВА
+        </h1>
+        <p class="about__text-prof">психолог, психотерапевт</p>
+        <p class="about__text-moscow">г.Москва <br>Член Общероссийской Профессиональной <br>Психотерапевтической Лиги
+          (ОППЛ)
+        </p>
+        <p class="about__text-passage">« <span class="about__text-passage-i">Я </span> искренне люблю людей и считаю,
+          <br> что на свете нет ничего интереснее»
+        </p>
       </div>
-    </section>
+      <img class="about__photo" src="/assets/images/about-foto.jpg" alt="photo">
+      <div class="about__button">
+        <label class="about__button-button" for="check_label">Обо мне</label>
+        <input type="checkbox" id="check_label" name="Обо мне">
+        <div class="about__button-terms">
+          <p class="about__button-terms-text">Я помогаю строить осознанную жизнь, поскольку верю, что такая жизнь может
+            быть захватывающе интересной.
+            Наблюдая за моими клиентами в процессе психотерапии, я вижу, что осознанность начинается с хорошего контакта
+            с
+            самим собой. Этот контакт опирается на знания о себе, рождает жажду реализовать свои планы и мечты, помогает
+            строить доверительные и уважительные отношения, а также придаёт силы принимать на себя всё большую
+            ответственность за собственную жизнь. Я верю, что осознанность помогает управлять своей жизнью, принося при
+            этом
+            полную удовлетворённость.</p>
+          <p class="about__button-terms-text">За моей спиной учёба на факультете Психологического консультирования
+            МГППУ, специализация в терапевтическом
+            методе (символдрама), более 300 часов личной терапии, более 1000 часов повышения квалификации и около 80
+            тренинговых дней, 13-летний опыт ведения индивидуальной работы и терапевтических групп, десятки отзывов
+            благодарных клиентов. Мой рабочий метод — Символдрама (кататимно-имагинативная психотерапия, КИП) — это
+            работа
+            с
+            образами при помощи воображения, чья эффективность доказана клиническими исследованиями.</p>
+          <p class="about__button-terms-text">За 13 лет частной практики в индивидуальном и групповом формате я нашла
+            свой главный интерес — мне нравится
+            сопровождать возрастные кризисы и особенно кризис 30 лет. Несмотря на условность цифры (она условна,
+            поскольку
+            границы кризиса очень индивидуальны и колеблются в пределах 24–35 лет), происходящие на этом рубеже процессы
+            максимально конкретны — личности человека предстоит существенная переплавка, и психотерапия в этом периоде
+            способна принести самые высокие жизненные дивиденды.</p>
+        </div>
+      </div>
 
+    </section>
     <section class="podcast">
       <div class="container">
         <h2 id="n2" class="podcast__title">Подкасты</h2>
@@ -56,164 +90,147 @@
           <div class="card" id="podcast__card1">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon1">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon1">
+                </div>
+                <p class="podcast__title">Про адаптацию к переезду</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Про адаптацию к переезду</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000584028893">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000584028893">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card2">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon2">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon2">
+                </div>
+                <p class="podcast__title">Про созависимость</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Про созависимость</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000548789740">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000548789740">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card3">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon3">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon3">
+                </div>
+                <p class="podcast__title">Возрастные кризисы</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Возрастные кризисы</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000546188527">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000546188527">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card4">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon4">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon4">
+                </div>
+                <p class="podcast__title">Про измены</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Про измены</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000542332578">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000542332578">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card5">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon5">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon5">
+                </div>
+                <p class="podcast__title">Про отношения с телом</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Про отношения с телом</p>
-                <div class="podcast__link">
-                  <a
-                    href="https://podcasts.apple.com/ru/podcast/она-сказала-он-сказал/id1538224024?i=1000526007506">Послушать</a>
-                </div>
+                <a
+                  href="https://podcasts.apple.com/ru/podcast/она-сказала-он-сказал/id1538224024?i=1000526007506">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card6">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon6">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon6">
+                </div>
+                <p class="podcast__title">Предназначение</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Предназначение</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000507272150 ">Послушать</a>
-                </div>
+
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000507272150 ">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card7">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon7">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon7">
+                </div>
+                <p class="podcast__title">Про проекции</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Про проекции</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000497172046">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000497172046">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card8">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon8">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon8">
+                </div>
+                <p class="podcast__title">Женщины которые любят слишком сильно</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Женщины которые любят слишком сильно</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000476396302">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000476396302">Послушать</a>
               </div>
             </div>
           </div>
           <div class="card" id="podcast__card9">
             <div class="face face1">
               <div class="content">
-                <img
-                  src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
-                  alt="icon9">
+                <div class="podcast__image">
+                  <img src="/assets/images/podcasticon.png" alt="icon9">
+                </div>
+                <p class="podcast__title">Первая беременность</p>
               </div>
             </div>
             <div class="face face2">
               <div class="content">
-                <p class="podcast__title">Первая беременность</p>
-                <div class="podcast__link">
-                  <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000467189299">Послушать</a>
-                </div>
+                <a href="https://podcasts.apple.com/ru/podcast/otvet-co/id1488897817?i=1000467189299">Послушать</a>
               </div>
             </div>
           </div>
         </div>
-        <p class="podcast__citation">“Мне нравится видеть как преломляется одна и та же психологическая тема в разных
-          судьбах и характерах, видеть
-          как каждый клиент находит свой уникальный маршрут индивидуализации.”</p>
+        <p class="podcast__citation">“Мне нравится видеть как преломляется одна и та же психологическая тема<br> в
+          разных судьбах и характерах, видеть как каждый клиент находит <br> свой уникальный маршрут индивидуализации.”
+        </p>
       </div>
     </section>
-
+    <!--Podcast end-->
 
     <!--Requests start-->
     <section class="requests">
@@ -284,23 +301,60 @@
     <!--Requests end-->
 
 
-
+    <!--Feedback start-->
     <section class="feedback">
-      <div class="feedback__#"> Отзывы. Их много в виде картинок</div>
     </section>
+    <!--Feedback end-->
 
+    <!--Education start-->
     <section class="education">
-      <div class="education__#">Образование нашего психолога. Есть информация в ТЗ, хотелось бы еще сканы дипломов
-        сюда.
-      </div>
     </section>
+    <!--Education end-->
 
   </main>
 
+
   <footer class="footer">
-    <div class="footer__#"> Повторение меню из хедера</div>
-    <div class="footer__#"> Иконки с соцсетями</div>
-    <div class="footer__#"> что-нибудь</div>
+    <div class="footer__contacts">
+      <h2 class="footer__title" id="n6"> КОНТАКТЫ</h2>
+      <ul class="footer__contactsList">
+
+        <li class="footer__contactsList-item">
+          <img src="assets/vectors/phone.png" alt="vector">
+          <a class="media"> +79055667727</a>
+        </li>
+        <li class="footer__contactsList-item">
+          <img src="assets/vectors/instagram.png" alt="vector">
+          <a class="media" href=" https://www.instagram.com/julia_anpilogova/">
+            https://www.instagram.com/julia_anpilogova/</a>
+        </li>
+
+        <li class="footer__contactsList-item">
+          <img src="assets/vectors/telegram.svg" alt="vector">
+          <a class="media" href="https://t.me/anpi_lo">https://t.me/anpi_lo</a>
+        </li>
+      </ul>
+
+    </div>
+    <nav class="menu footer__menu" id="footer__menu">
+      <ul class="footer__menuList">
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n1">Главная</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n2">Подкасты</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n3">Запросы</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n4">Отзывы</a>
+        </li>
+        <li class="footer__menuList-items">
+          <a class="footer__menuList-item" href="#n5">Cертификаты</a>
+        </li>
+      </ul>
+    </nav>
   </footer>
 </body>
 

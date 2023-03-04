@@ -1,0 +1,35 @@
+#n4 {
+	@include font-section-title;
+	margin-bottom: 63px;
+}
+
+.feedback__wrap-image {
+	border: 10px solid red;
+	position: relative;
+	width: 939px;
+	margin-bottom: 50px;
+
+	&::before {
+		content: '';
+		display: block;
+		height: 10px;
+		background-color: $pink-color;
+	}
+}
+
+.feedback__wrap-citation {
+	display: flex;
+	justify-content: end;
+	max-width: 100%;
+}
+
+.feedback__citation {
+	@include font-citation;
+	line-height: 70px;
+	margin-top: 50px;
+}
+.carousel-item {
+	width: 900px;
+	height: 700px;
+	margin-left: 200px;
+}

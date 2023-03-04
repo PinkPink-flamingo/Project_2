@@ -1,4 +1,4 @@
-.header-meny{
+.header-meny {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -22,7 +22,7 @@
 
 .about {
     display: grid;
-grid-template-columns: 18.5% 81.5%;
+    grid-template-columns: 18.5% 81.5%;
 
     padding-left: 8%;
     padding-right: 5%;
@@ -36,12 +36,13 @@ grid-template-columns: 18.5% 81.5%;
         &-title {
             position: absolute;
             margin-top: 25%;
-            font-family:Moniqa-MediumHeading;
+            font-family: Moniqa-MediumHeading;
             font-weight: 500;
             font-size: 96px;
             line-height: 100px;
             color: $pink-color;
         }
+
         &-prof {
             position: absolute;
             margin-top: 45%;
@@ -51,6 +52,7 @@ grid-template-columns: 18.5% 81.5%;
             position: absolute;
             margin-top: 50%;
         }
+
         &-passage {
             position: absolute;
             margin-top: 65%;
@@ -62,17 +64,18 @@ grid-template-columns: 18.5% 81.5%;
             line-height: 52px;
             color: $white-color;
 
-                &-i {
-                    color: $pink-color;
-                }
+            &-i {
+                color: $pink-color;
+            }
         }
     }
+
     &__photo {
         grid-template-areas: 2/3/2/3;
     }
 
 
-    &__button{
+    &__button {
         width: 273px;
         height: 92px;
 
@@ -80,6 +83,7 @@ grid-template-columns: 18.5% 81.5%;
             @include button;
             padding: 25px 85px;
         }
+
         &-terms {
             margin-top: 40px;
             position: absolute;
@@ -90,8 +94,8 @@ grid-template-columns: 18.5% 81.5%;
             transition: .8s;
             padding: 25px;
             opacity: 0;
-        
-            &-text { 
+
+            &-text {
                 // font-family: 'Moniqa-MediumHeading';
                 font-size: 18px;
                 // font-weight: bold;
@@ -100,30 +104,31 @@ grid-template-columns: 18.5% 81.5%;
                 margin-bottom: 10px;
             }
         }
-        
-        #check_label {
+
+        #check_label-about {
             display: none;
-        
+
             &:checked~.about__button-terms {
                 display: block;
                 height: auto;
                 opacity: 1;
             }
         }
-    
+
     }
-}  
+}
 
 @media screen and (max-width: 885px) {
     .about {
         margin-bottom: 20%;
-    
-    &__text{
-        margin-left: 2%;
+
+        &__text {
+            margin-left: 2%;
 
             &-title {
                 margin-top: 15%;
             }
+
             &-passage {
                 font-size: 30px;
                 line-height: 42px;
@@ -135,7 +140,8 @@ grid-template-columns: 18.5% 81.5%;
 #burger {
     display: none;
 }
-    @media screen and (max-width: 730px) {
+
+@media screen and (max-width: 730px) {
     [for=burger] {
         display: block;
         position: absolute;
@@ -175,43 +181,49 @@ grid-template-columns: 18.5% 81.5%;
         content: '✕';
     }
 
-    .about__text{
-        margin-left:1%;
+    .about__text {
+        margin-left: 1%;
 
         &-title {
             margin-top: 25%;
             font-size: 66px;
             line-height: 80px;
         }
+
         &-prof {
             margin-top: 45%;
         }
+
         &-passage {
-        display: none;
+            display: none;
         }
+
         &-moscow {
             display: none;
         }
     }
 }
+
 @media screen and (max-width: 410px) {
-    .about__text{
-        margin-left:1%;
+    .about__text {
+        margin-left: 1%;
 
         &-title {
             margin-top: 30%;
             font-size: 66px;
             line-height: 80px;
         }
+
         &-prof {
             margin-top: 65%;
         }
+
         &-passage {
-        display: none;
+            display: none;
         }
+
         &-moscow {
             display: none;
         }
     }
 }
-

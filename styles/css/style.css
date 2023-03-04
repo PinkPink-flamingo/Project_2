@@ -74,7 +74,7 @@ img {
 .about__text-title {
   position: absolute;
   margin-top: 25%;
-  font-family: Moniqa-MediumHeading;
+  font-family: "Moniqa-MediumHeading";
   font-weight: 500;
   font-size: 96px;
   line-height: 100px;
@@ -133,18 +133,22 @@ img {
   margin-top: 40px;
   position: absolute;
   max-width: 1000px;
-  background-color: #000000;
+  background-color: #D9D9D9;
   border-radius: 40px;
   border: none;
   transition: 0.8s;
   padding: 25px;
   opacity: 0;
+  z-index: 5;
 }
 .about__button-terms-text {
-  font-size: 18px;
-  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 .about__button #check_label-about {
   display: none;
@@ -533,14 +537,16 @@ img {
   transition: 0.8s;
   padding: 25px;
   opacity: 0;
+  z-index: 6;
 }
 .requests__consultation-terms-text {
-  font-family: "Moniqa-MediumHeading";
-  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
   font-weight: bold;
+  font-style: italic;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 #check_label {

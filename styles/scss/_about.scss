@@ -36,7 +36,7 @@
         &-title {
             position: absolute;
             margin-top: 25%;
-            font-family: Moniqa-MediumHeading;
+            font-family: "Moniqa-MediumHeading";
             font-weight: 500;
             font-size: 96px;
             line-height: 100px;
@@ -88,20 +88,22 @@
             margin-top: 40px;
             position: absolute;
             max-width: 1000px;
-            background-color: $bg-color;
+            background-color: $grey-color;
             border-radius: 40px;
             border: none;
             transition: .8s;
             padding: 25px;
             opacity: 0;
+            z-index: 5;
 
             &-text {
-                // font-family: 'Moniqa-MediumHeading';
-                font-size: 18px;
-                // font-weight: bold;
-                color: $white-color;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: italic;
+                color: $bg-color;
                 margin-top: 0;
-                margin-bottom: 10px;
+                margin-bottom: 6px;
             }
         }
 

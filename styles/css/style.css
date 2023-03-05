@@ -870,23 +870,6 @@ img {
 .carousel-item {
   max-width: 900px;
   height: 700px;
-  margin-left: 20%;
-  margin-bottom: 10%;
-}
-
-.education__title {
-  font-family: "Moniqa-SemiBoldParagraph";
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 42px;
-  color: #ffffff;
-}
-
-.foto {
-  margin-left: 10%;
-  border-top: solid #FB016B 5px;
-  border-left: solid #FB016B 5px;
 }
 
 .carousel-control-prev {

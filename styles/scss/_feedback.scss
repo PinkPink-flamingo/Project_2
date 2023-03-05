@@ -7,7 +7,8 @@
 
 	position: relative;
 	max-width: 939px;
-	margin: 0 auto 50px;
+	// margin: 0 auto 50px;
+	// border-top: solid $pink-color 1px;
 
 
 	&::before {
@@ -18,7 +19,7 @@
 	}
 }
 
-.feedback__wrap-citation {
+.education__wrap-citation {
 	display: flex;
 	justify-content: end;
 	max-width: 100%;
@@ -26,7 +27,7 @@
 
 }
 
-.feedback__citation {
+.education__citation {
 	@include font-citation;
 	line-height: 70px;
 
@@ -35,7 +36,26 @@
 .carousel-item {
 	width: 900px;
 	height: 700px;
-	margin-left: 200px;
+	// margin-left: 200px;
+	margin-left: 20%;
+	margin-bottom: 10%
+}
+.education__title {
+	@include font-section-title;
+	// margin-bottom: 63px;
+}
+.foto {
+	 margin-left: 10%;
+	border-top: solid $pink-color 5px;
+	border-left: solid $pink-color 5px;
+	 
+
+	// height: 800px;
+	// width: 1200px;
+	// left: -251px;
+	// top: 6419px;
+	// border-radius: 0px;
+	// max-width: 100%;
 }
 
 @media screen and (max-width:730px) {

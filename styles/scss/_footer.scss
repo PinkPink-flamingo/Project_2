@@ -36,6 +36,9 @@
             list-style: none;
             padding: 2px;
             border-radius: 2px;
+            border: none;
+            background-color: transparent;
+            
         }
 
         .media:hover {
@@ -55,9 +58,7 @@
         flex-direction: column;
         justify-content: space-between;
         list-style: none;
-        // padding-top: 30%;
-        // padding-left: 5%;
-        // padding-right: 5%;
+         
 
         &-item {
             font-family: 'Moniqa-LightParagraph';

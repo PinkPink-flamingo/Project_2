@@ -513,6 +513,25 @@ img {
     margin-left: -20px;
   }
 }
+.carousel-inner__education {
+  width: 600px;
+  height: 100%;
+}
+
+.support {
+  width: 600px;
+  height: 600px;
+}
+
+.foto {
+  height: 800px;
+  width: 1200px;
+  left: -251px;
+  top: 6419px;
+  border-radius: 0px;
+  max-width: 100%;
+}
+
 .requests__title {
   font-family: "Moniqa-SemiBoldParagraph";
   text-transform: uppercase;

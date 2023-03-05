@@ -248,6 +248,10 @@ img {
     background-position: -170px 0;
   }
 }
+.podcast {
+  margin-top: 5rem;
+}
+
 .podcast__title {
   font-family: "Moniqa-SemiBoldParagraph";
   text-transform: uppercase;
@@ -307,6 +311,7 @@ img {
 .podcast__container .card {
   position: relative;
   cursor: pointer;
+  background: #000000;
 }
 .podcast__container .card .face {
   width: 300px;
@@ -388,6 +393,7 @@ img {
   color: #FB016B;
   line-height: 70px;
   margin-right: 20px;
+  margin-top: 5rem;
 }
 
 .podcast__image {
@@ -815,6 +821,25 @@ img {
     margin-left: -20px;
   }
 }
+.carousel-inner__education {
+  width: 600px;
+  height: 100%;
+}
+
+.support {
+  width: 600px;
+  height: 600px;
+}
+
+.foto {
+  height: 800px;
+  width: 1200px;
+  left: -251px;
+  top: 6419px;
+  border-radius: 0px;
+  max-width: 100%;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 55% 2fr 1fr;

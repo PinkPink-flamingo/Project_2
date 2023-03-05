@@ -1,3 +1,8 @@
+.education__title {
+	@include font-section-title;
+	margin-bottom: 63px;
+}
+
 .carousel-inner__education {
 	width: 600px;
 	height: 100%;

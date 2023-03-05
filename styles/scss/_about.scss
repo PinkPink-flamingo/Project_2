@@ -91,7 +91,9 @@
 
 .about__button-button {
   @include button;
-  padding: 25px 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -112,6 +114,7 @@
     font-size: 14px;
     font-weight: bold;
     font-style: italic;
+    line-height: 16px;
     color: $bg-color;
     margin-top: 0;
     margin-bottom: 6px;

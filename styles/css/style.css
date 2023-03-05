@@ -261,12 +261,6 @@ img {
     background-position: -170px 0;
   }
 }
-<<<<<<< HEAD
-.podcast {
-  margin-top: 5rem;
-}
-
-=======
 @media screen and (max-width: 470px) {
   .about__wrap-button {
     align-items: center;
@@ -274,7 +268,10 @@ img {
     margin-right: 0px;
   }
 }
->>>>>>> 5580c0e7e56b10eda0ff031dd6041b09775b2e3c
+.podcast {
+  margin-top: 5rem;
+}
+
 .podcast__title {
   font-family: "Moniqa-SemiBoldParagraph";
   text-transform: uppercase;

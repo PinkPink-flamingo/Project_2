@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,22 +19,22 @@
   <header class="header">
     <input type="checkbox" id="burger" />
     <label for="burger"></label>
-    <nav class="meny" id="header__menu">
-      <ul class="meny header-meny">
-        <li class="header-meny__li">
-          <a class="header-meny__li-a" href="#n2">Подкасты</a>
+    <nav class="menu" id="header__menu">
+      <ul class="meny header-menu">
+        <li class="header-menu__li">
+          <a class="header-menu__li-a" href="#n2">Подкасты</a>
         </li>
-        <li class="header-meny__li">
-          <a class="header-meny__li-a" href="#n3">Запросы</a>
+        <li class="header-menu__li">
+          <a class="header-menu__li-a" href="#n3">Запросы</a>
         </li>
-        <li class="header-meny__li">
-          <a class="header-meny__li-a" href="#n5">Образование</a>
+        <li class="header-menu__li">
+          <a class="header-menu__li-a" href="#n5">Образование</a>
         </li>
-        <li class="header-meny__li">
-          <a class="header-meny__li-a" href="#n4">Отзывы</a>
+        <li class="header-menu__li">
+          <a class="header-menu__li-a" href="#n4">Отзывы</a>
         </li>
-        <li class="header-meny__li">
-          <a class="header-meny__li-a" href="#n6">Контакты</a>
+        <li class="header-menu__li">
+          <a class="header-menu__li-a" href="#n6">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -249,7 +249,6 @@
       </div>
     </section>
     <!--Podcast end-->
-
     <!--Requests start-->
     <section class="requests">
       <div class="container">
@@ -334,15 +333,12 @@
       </div>
     </section>
     <!--Requests end-->
-
-
     <!--Feedback start-->
     <section class="feedback">
       <div class="container">
         <div class="feedback__wrap-image">
           <img class="feedback__image" src="./assets/images/feedbacknew.png" alt="women" />
         </div>
-
         <h2 id="n4" class="feedback__title">Отзывы</h2>
 
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -419,23 +415,29 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="feedback__wrap-citation">
+        <!-- <div class="feedback__wrap-citation">
           <p class="feedback__citation">“Больше всего в моей работе меня волнует <br />
             ощущение общности: ведь не смотря на наши,<br />
             различия мы все плывем в одной лодке!»
           </p>
-        </div>
+        </div> -->
       </div>
     </section>
     <!--Feedback end-->
 
-    <!--Education start-->
+    <!-- Education start -->
     <section class="education">
       <div class="container">
-        <img class="foto" src="/assets/images/new4.png" />
+        <img class="foto" src="/assets/images/new4.jpg" />
+        <div class="education__wrap-citation">
+          <p class="education__citation">“Больше всего в моей работе меня волнует <br />
+            ощущение общности: ведь не смотря на наши,<br />
+            различия мы все плывем в одной лодке!»
+          </p>
+        </div>
         <h2 id="n5" class="education__title">Дипломы и сертификаты</h2>
 
-        <div class="col-lg-10 d-flex justify-content-center">
+        <!-- <div class="col-lg-10 d-flex justify-content-center">
           <div id="carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner carousel-inner__education">
               <div class="carousel-item active">
@@ -472,7 +474,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!--Education end-->
@@ -488,7 +490,6 @@
           <img src="assets/vectors/phone.png" alt="vector">
           <a class="media"> +79055667727</a>
         </li>
-
         <li class="footer__contactsList-item">
           <button onClick=(newWindowWhatapp()) class="media"><img class="price__whatapp" alt="whats_app"
               src="./assets/vectors/whatsapp.svg"></img>Whats App</button>
@@ -498,7 +499,6 @@
             }
           </script>
         </li>
-
         <li class="footer__contactsList-item">
           <button onClick=(newWindowInstagram()) class="media"><img class="price__instagram" alt="Instagram"
               src="./assets/vectors/instagram.png"></img>Instagram</button>
@@ -517,10 +517,6 @@
             }
           </script>
         </li>
-        <!-- <li class="footer__contactsList-item">
-            <img src="assets/vectors/telegram.svg" alt="vector">
-            <a class="media" href="https://t.me/anpi_lo">https://t.me/anpi_lo</a>
-          </li> -->
       </ul>
 
     </div>

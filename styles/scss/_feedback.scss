@@ -25,7 +25,7 @@
 	}
 }
 
-.feedback__wrap-citation {
+.education__wrap-citation {
 	display: flex;
 	justify-content: end;
 	max-width: 100%;
@@ -33,7 +33,7 @@
 
 }
 
-.feedback__citation {
+.education__citation {
 	@include font-citation;
 	line-height: 70px;
 

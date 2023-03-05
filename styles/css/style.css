@@ -777,8 +777,8 @@ img {
 
 .feedback__wrap-image {
   position: relative;
-  width: 939px;
-  margin-bottom: 50px;
+  max-width: 939px;
+  margin: 0 auto 50px;
 }
 .feedback__wrap-image::before {
   content: "";
@@ -791,6 +791,7 @@ img {
   display: flex;
   justify-content: end;
   max-width: 100%;
+  margin-right: 20px;
 }
 
 .feedback__citation {
@@ -802,7 +803,6 @@ img {
   text-align: right;
   color: #FB016B;
   line-height: 70px;
-  margin-top: 50px;
 }
 
 .carousel-item {

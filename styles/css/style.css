@@ -775,9 +775,15 @@ img {
   margin-bottom: 63px;
 }
 
+#carouselExampleFade {
+  max-width: 900px;
+  max-height: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .feedback__wrap-image {
   position: relative;
-  max-width: 939px;
   margin: 0 auto 50px;
 }
 .feedback__wrap-image::before {
@@ -806,12 +812,61 @@ img {
 }
 
 .carousel-item {
-  width: 900px;
+  max-width: 900px;
   height: 700px;
-  margin-left: 200px;
 }
 
-@media screen and (max-width: 730px) {
+.carousel-control-prev {
+  height: 500px;
+  width: 90px;
+}
+
+.carousel-control-next {
+  height: 500px;
+  width: 90px;
+}
+
+@media screen and (max-width: 1020px) {
+  #carouselExampleFade {
+    max-width: 750px;
+    max-height: 550px;
+  }
+  .carousel-control-prev {
+    height: 400px;
+    width: 60px;
+  }
+  .carousel-control-next {
+    height: 400px;
+    width: 60px;
+  }
+}
+@media screen and (max-width: 840px) {
+  #carouselExampleFade {
+    max-width: 650px;
+    max-height: 400px;
+  }
+  .carousel-control-prev {
+    height: 300px;
+  }
+  .carousel-control-next {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 735px) {
+  #carouselExampleFade {
+    max-width: 450px;
+    max-height: 400px;
+  }
+  .carousel-control-prev {
+    height: 250px;
+    width: 20px;
+    left: 20%;
+  }
+  .carousel-control-next {
+    height: 250px;
+    width: 20px;
+    right: 20%;
+  }
   #n4 {
     font-size: 30px;
   }
@@ -820,21 +875,24 @@ img {
   }
   .feedback__citation {
     line-height: 50px;
-    text-align: right;
-    font-family: "BadScript-Regular";
-    font-style: italic;
   }
   .feedback__wrap-image {
     position: relative;
-    width: 439px;
-  }
-  .carousel-item {
-    width: 600px;
-    height: 400px;
-    margin-left: -70px;
+    max-width: 439px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 520px) {
+  #carouselExampleFade {
+    width: 350px;
+  }
+  .carousel-control-prev {
+    height: 200px;
+  }
+  .carousel-control-next {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 475px) {
   .feedback__citation {
     font-size: 24px;
     line-height: 50px;
@@ -843,10 +901,15 @@ img {
     position: relative;
     width: 339px;
   }
-  .carousel-item {
-    width: 400px;
+  #carouselExampleFade {
+    width: 300px;
     height: 300px;
-    margin-left: -20px;
+  }
+  .carousel-control-prev {
+    height: 150px;
+  }
+  .carousel-control-next {
+    height: 150px;
   }
 }
 .education__title {

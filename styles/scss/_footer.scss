@@ -25,11 +25,13 @@
         .footer__title {
             @include font-section-title;
             padding-left: 10%;
+            margin-bottom: 10%;
+
         }
 
         .footer__contactsList-item,
         .media {
-            width: 100px;
+            
             font-family: 'Moniqa-LightParagraph';
             font-weight: 300;
             font-size: 24px;
@@ -40,12 +42,13 @@
             border-radius: 5px;
             border: none;
             background-color: transparent;
+          
 
         }
 
         .media:hover {
             background: $pink-color;
-            padding: 0.4em 1.4em 0.4em 1.4em;
+            padding: 0.2em 1.2em 0.2em 1.2em;
             transition: all .5s ease 0s;
         }
     }
@@ -124,14 +127,15 @@
 @media screen and (max-width:430px) {
     .footer {
         display: flex;
-        justify-content: center;
+        justify-content:center;
         align-items: center;
         background-image: none;
         background-color: $bg-color;
-    }
+        .footer__title {
+            margin-bottom: 30%;
 
-    .footer__menu {
-        display: none;
+        }  
+        
     }
 
 }

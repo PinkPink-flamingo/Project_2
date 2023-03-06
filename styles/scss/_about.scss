@@ -16,11 +16,13 @@
     text-decoration: none;
     color: $white-color;
     list-style: none;
+    
   }
 
   &__li:hover {
     background-color: $pink-color;
     list-style: none;
+    text-decoration: none;
   }
 }
 

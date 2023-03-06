@@ -60,6 +60,7 @@ img {
 .header-menu__li:hover {
   background-color: #FB016B;
   list-style: none;
+  text-decoration: none;
 }
 
 .about__wrap-main {
@@ -870,23 +871,6 @@ img {
 .carousel-item {
   max-width: 900px;
   height: 700px;
-  margin-left: 20%;
-  margin-bottom: 10%;
-}
-
-.education__title {
-  font-family: "Moniqa-SemiBoldParagraph";
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 42px;
-  color: #ffffff;
-}
-
-.foto {
-  margin-left: 10%;
-  border-top: solid #FB016B 5px;
-  border-left: solid #FB016B 5px;
 }
 
 .carousel-control-prev {
@@ -1012,10 +996,10 @@ img {
   line-height: 42px;
   color: #ffffff;
   padding-left: 10%;
+  margin-bottom: 10%;
 }
 .footer__contacts .footer__contactsList-item,
 .footer__contacts .media {
-  width: 100px;
   font-family: "Moniqa-LightParagraph";
   font-weight: 300;
   font-size: 24px;
@@ -1029,7 +1013,7 @@ img {
 }
 .footer__contacts .media:hover {
   background: #FB016B;
-  padding: 0.4em 1.4em 0.4em 1.4em;
+  padding: 0.2em 1.2em 0.2em 1.2em;
   transition: all 0.5s ease 0s;
 }
 .footer__menu {
@@ -1094,8 +1078,8 @@ img {
     background-image: none;
     background-color: #000000;
   }
-  .footer__menu {
-    display: none;
+  .footer .footer__title {
+    margin-bottom: 30%;
   }
 }
 

@@ -573,12 +573,6 @@ img {
   z-index: -1;
   transform: translateX(-10%);
 }
-.requests__wrap-image::before {
-  content: "";
-  display: block;
-  height: 10px;
-  background-color: #FB016B;
-}
 
 .requests__image {
   max-width: 100%;

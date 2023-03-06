@@ -8,8 +8,6 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" /> -->
   <link rel="stylesheet" href="styles/css/normalize.css" />
   <link rel="stylesheet" href="styles/css/style.css" />
 </head>
@@ -28,10 +26,10 @@
           <a class="header-menu__li-a" href="#n3">Запросы</a>
         </li>
         <li class="header-menu__li">
-          <a class="header-menu__li-a" href="#n5">Образование</a>
+          <a class="header-menu__li-a" href="#n4">Образование</a>
         </li>
         <li class="header-menu__li">
-          <a class="header-menu__li-a" href="#n4">Отзывы</a>
+          <a class="header-menu__li-a" href="#n5">Отзывы</a>
         </li>
         <li class="header-menu__li">
           <a class="header-menu__li-a" href="#n6">Контакты</a>
@@ -278,7 +276,7 @@
         <!--блок консультации онлайн, условия-->
         <div class="requests__wrap-second">
           <div class="requests__wrap-consultation">
-            <h2 class="requests__title">Консультации онлайн</h2>
+            <h2 class="requests__title  title-second">Консультации онлайн</h2>
 
             <div class="requests__consultation">
               <label class="requests__consultation-button" for="check_label">Условия</label>
@@ -333,13 +331,72 @@
       </div>
     </section>
     <!--Requests end-->
+
+    <!-- Education start -->
+    <section class="education">
+      <div class="container">
+        <img class="education-foto" src="/assets/images/new4.jpg" />
+
+        <h2 id="n4" class="education__title">Дипломы и сертификаты</h2>
+        <div class="education__wrap-button">
+          <label class="education__button" for="check_label-education">Образование</label>
+          <input type="checkbox" id="check_label-education" name="Образование">
+          <div class="education__images">
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_1773.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_1775.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9197.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9199.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9200.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9201.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9203.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9204.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9206.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_9207.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_4921.jpg" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_4922.jpg" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_1768.JPG" alt="education-foto">
+            </div>
+            <div class="image-wrap">
+              <img src="/assets/images/IMG_1772.JPG" alt="education-foto">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Education end-->
+
     <!--Feedback start-->
     <section class="feedback">
       <div class="container">
         <div class="feedback__wrap-image">
           <img class="feedback__image" src="./assets/images/feedbacknew.png" alt="women" />
         </div>
-        <h2 id="n4" class="feedback__title">Отзывы</h2>
+        <h2 id="n5" class="feedback__title">Отзывы</h2>
 
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
           <div class="carousel-inner">
@@ -415,69 +472,15 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <!-- <div class="feedback__wrap-citation">
+        <div class="feedback__wrap-citation">
           <p class="feedback__citation">“Больше всего в моей работе меня волнует <br />
             ощущение общности: ведь не смотря на наши,<br />
             различия мы все плывем в одной лодке!»
           </p>
-        </div> -->
+        </div>
       </div>
     </section>
     <!--Feedback end-->
-
-    <!-- Education start -->
-    <section class="education">
-      <div class="container">
-        <img class="foto" src="/assets/images/new4.jpg" />
-        <div class="education__wrap-citation">
-          <p class="education__citation">“Больше всего в моей работе меня волнует <br />
-            ощущение общности: ведь не смотря на наши,<br />
-            различия мы все плывем в одной лодке!»
-          </p>
-        </div>
-        <h2 id="n5" class="education__title">Дипломы и сертификаты</h2>
-
-        <!-- <div class="col-lg-10 d-flex justify-content-center">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner carousel-inner__education">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="/assets/images/education-foto1.jpg" alt="Cертификат" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto2.jpg" alt="Удостоверение" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto3.jpg" alt="Сертификат" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto4.jpg" alt="Свидетельство" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto5.jpg" alt="Сертификат" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto6.jpg" alt="Свидетельство" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto7.jpg" alt="Сертификат" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 support" src="/assets/images/education-foto8.jpg" alt="Сертификат" />
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div> -->
-      </div>
-    </section>
-    <!--Education end-->
   </main>
 
   <!--Footer start-->
@@ -542,12 +545,7 @@
   </footer>
   <!--Footer end-->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-    crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -557,6 +555,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>

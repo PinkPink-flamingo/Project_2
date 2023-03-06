@@ -12,17 +12,11 @@
 
 
 .feedback__wrap-image {
-	position: relative;
-	margin: 0 auto 50px;
-	width: 1000px;
-	border-right: 10px solid $pink-color;
+	width: 100%;
+	border-right: 5px solid $pink-color;
+	border-bottom: 5px solid $pink-color;
+	margin-bottom: 60px;
 
-	&::before {
-		content: '';
-		display: block;
-		height: 10px;
-		background-color: $pink-color;
-	}
 }
 
 .feedback__wrap-citation {
@@ -121,12 +115,6 @@
 
 	}
 
-	.feedback__wrap-image {
-
-		position: relative;
-		max-width: 439px;
-	}
-
 
 }
 
@@ -149,12 +137,6 @@
 	.feedback__citation {
 		font-size: 24px;
 		line-height: 50px;
-	}
-
-	.feedback__wrap-image {
-
-		position: relative;
-		width: 339px;
 	}
 
 	#carouselExampleFade {

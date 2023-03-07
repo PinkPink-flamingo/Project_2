@@ -39,13 +39,23 @@
 	display: inline-block;
 }
 
-.education-foto {
+.education__wrap-foto {
+	max-width: 100%;
 	margin-bottom: 60px;
-	width: 100%;
+}
+
+.education-foto {
+	max-width: 90%;
 	border-left: 5px solid $pink-color;
-  border-top: 5px solid $pink-color;
+	border-top: 5px solid $pink-color;
 }
 
 .education {
 	margin-bottom: 80px;
+}
+
+@media screen and (max-width:431px) {
+	.image-wrap {
+		width: 100px;
+	}
 }

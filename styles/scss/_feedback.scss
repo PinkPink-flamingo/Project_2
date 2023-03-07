@@ -12,11 +12,12 @@
 
 
 .feedback__wrap-image {
-	max-width: 1200px;
+	max-width: 100%;
 	margin-bottom: 60px;
 }
 
 .feedback__image {
+	max-width: 90%;
 	border-right: 5px solid $pink-color;
 	border-bottom: 5px solid $pink-color;
 }

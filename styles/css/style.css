@@ -15,6 +15,22 @@
   src: url(/assets/fonts/Moniqa-SemiBoldParagraph.ttf);
   font-family: "Moniqa-SemiBoldParagraph";
 }
+@font-face {
+  src: url(/assets/fonts/Manrope-Light.ttf);
+  font-family: "Manrope-Light";
+}
+@font-face {
+  src: url(/assets/fonts/Manrope-Medium.ttf);
+  font-family: "Manrope-Medium";
+}
+@font-face {
+  src: url(/assets/fonts/Manrope-Regular.ttf);
+  font-family: "Manrope-Regular";
+}
+@font-face {
+  src: url(/assets/fonts/Manrope-SemiBold.ttf);
+  font-family: "Manrope-SemiBold";
+}
 *,
 :after,
 :before {
@@ -84,6 +100,8 @@ img {
   margin: 0.6em 0;
 }
 .about__text-prof {
+  font-family: "Manrope-Light";
+  font-size: 20px;
   line-height: 25px;
   margin: 0;
 }
@@ -154,10 +172,8 @@ img {
   z-index: 5;
 }
 .about__button-terms-text {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Manrope-SemiBold";
   font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
   line-height: 16px;
   color: #000000;
   margin-top: 0;
@@ -550,13 +566,14 @@ img {
 .requests__list-item {
   margin-bottom: 40px;
   text-transform: uppercase;
-  font-family: "Moniqa-MediumHeading";
+  font-family: "Manrope-Medium";
+  font-size: 20px;
 }
 .requests__list-item::before {
   content: "";
   display: inline-block;
   margin-right: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   width: 12px;
   height: 12px;
   border-radius: 3px;
@@ -625,10 +642,8 @@ img {
   z-index: 6;
 }
 .requests__consultation-terms-text {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Manrope-SemiBold";
   font-size: 14px;
-  font-weight: bold;
-  font-style: italic;
   line-height: 16px;
   color: #000000;
   margin-top: 0;
@@ -881,9 +896,12 @@ img {
   display: inline-block;
 }
 
-.education-foto {
+.education__wrap-foto {
   margin-bottom: 60px;
-  width: 100%;
+  max-width: 1200px;
+}
+
+.education-foto {
   border-left: 5px solid #FB016B;
   border-top: 5px solid #FB016B;
 }
@@ -892,6 +910,11 @@ img {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 431px) {
+  .image-wrap {
+    width: 100px;
+  }
+}
 #n5 {
   font-family: "Moniqa-SemiBoldParagraph";
   text-transform: uppercase;
@@ -910,10 +933,13 @@ img {
 }
 
 .feedback__wrap-image {
-  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 60px;
+}
+
+.feedback__image {
   border-right: 5px solid #FB016B;
   border-bottom: 5px solid #FB016B;
-  margin-bottom: 60px;
 }
 
 .feedback__wrap-citation {

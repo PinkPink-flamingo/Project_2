@@ -60,6 +60,7 @@ img {
 .header-menu__li:hover {
   background-color: #FB016B;
   list-style: none;
+  text-decoration: none;
 }
 
 .about__wrap-main {
@@ -882,8 +883,9 @@ img {
 
 .education-foto {
   margin-bottom: 60px;
-  border-radius: 50%;
-  border-left: 10px solid #FB016B;
+  width: 100%;
+  border-left: 5px solid #FB016B;
+  border-top: 5px solid #FB016B;
 }
 
 .education {
@@ -908,16 +910,10 @@ img {
 }
 
 .feedback__wrap-image {
-  position: relative;
-  margin: 0 auto 50px;
-  width: 1000px;
-  border-right: 10px solid #FB016B;
-}
-.feedback__wrap-image::before {
-  content: "";
-  display: block;
-  height: 10px;
-  background-color: #FB016B;
+  width: 100%;
+  border-right: 5px solid #FB016B;
+  border-bottom: 5px solid #FB016B;
+  margin-bottom: 60px;
 }
 
 .feedback__wrap-citation {
@@ -999,10 +995,6 @@ img {
   .feedback__citation {
     line-height: 50px;
   }
-  .feedback__wrap-image {
-    position: relative;
-    max-width: 439px;
-  }
 }
 @media screen and (max-width: 520px) {
   #carouselExampleFade {
@@ -1019,10 +1011,6 @@ img {
   .feedback__citation {
     font-size: 24px;
     line-height: 50px;
-  }
-  .feedback__wrap-image {
-    position: relative;
-    width: 339px;
   }
   #carouselExampleFade {
     width: 300px;
@@ -1062,10 +1050,10 @@ img {
   line-height: 42px;
   color: #ffffff;
   padding-left: 10%;
+  margin-bottom: 10%;
 }
 .footer__contacts .footer__contactsList-item,
 .footer__contacts .media {
-  width: 100px;
   font-family: "Moniqa-LightParagraph";
   font-weight: 300;
   font-size: 24px;
@@ -1079,7 +1067,7 @@ img {
 }
 .footer__contacts .media:hover {
   background: #FB016B;
-  padding: 0.4em 1.4em 0.4em 1.4em;
+  padding: 0.2em 1.2em 0.2em 1.2em;
   transition: all 0.5s ease 0s;
 }
 .footer__menu {
@@ -1144,8 +1132,8 @@ img {
     background-image: none;
     background-color: #000000;
   }
-  .footer__menu {
-    display: none;
+  .footer .footer__title {
+    margin-bottom: 30%;
   }
 }
 

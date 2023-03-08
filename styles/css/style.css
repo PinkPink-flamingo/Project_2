@@ -131,9 +131,9 @@ img {
 }
 
 .about__wrap-button {
-  display: flex;
-  flex-direction: column;
-  margin: 75px;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .about__button-button {
@@ -911,9 +911,17 @@ img {
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 655px) {
   .image-wrap {
     width: 100px;
+  }
+}
+@media screen and (max-width: 455px) {
+  .education__images {
+    margin-top: 20px;
+  }
+  .image-wrap {
+    width: 80px;
   }
 }
 .feedback__container {

@@ -6,6 +6,18 @@
     font-size: 40px;
     line-height: 42px;
     color: $white-color;
+
+    @media screen and (max-width: 730px) {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 43px;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 23px;
+    }
 }
 
 // mixin для цитат
@@ -17,6 +29,16 @@
     line-height: 46px;
     text-align: right;
     color: $pink-color;
+
+    @media screen and (max-width: 730px) {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    @media screen and (max-width: 410px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 // mixin для кнопок

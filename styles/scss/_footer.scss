@@ -49,7 +49,7 @@
         .media:hover {
             background: $pink-color;
             padding: 0.2em 1.2em 0.2em 1.2em;
-            transition: all .5s ease 0s;
+            transition: all .5s ease .5s;
         }
     }
 
@@ -64,6 +64,7 @@
         flex-direction: column;
         justify-content: space-between;
         list-style: none;
+        margin-top: 60%;
 
 
         &-item {
@@ -78,7 +79,7 @@
 
         .footer__menuList-item:hover {
             background: $pink-color;
-            transition: all .5s ease 0s;
+            transition: all .5s ease 0.5s;
         }
     }
 }
@@ -126,16 +127,15 @@
 
 @media screen and (max-width:430px) {
     .footer {
+        height: 250px;
         display: flex;
         justify-content:center;
         align-items: center;
         background-image: none;
-        background-color: $bg-color;
+        background-color: $bg-color;}
         .footer__title {
-            margin-bottom: 30%;
-
-        }  
-        
-    }
-
+            margin-bottom: 20%;}  
+            .footer__contactsList-item {
+               padding-left: 10px;
+            }
 }

@@ -525,6 +525,7 @@ img {
 @media screen and (max-width: 410px) {
   .podcast__citation {
     font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -721,6 +722,7 @@ img {
 @media screen and (max-width: 410px) {
   .requests__citation {
     font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -1217,6 +1219,7 @@ img {
 @media screen and (max-width: 410px) {
   .feedback__citation {
     font-size: 24px;
+    line-height: 30px;
   }
 }
 

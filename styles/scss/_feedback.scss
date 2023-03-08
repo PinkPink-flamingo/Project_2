@@ -1,3 +1,185 @@
+.feedback__container {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.feedback-slider__item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	counter-increment: slide;
+	height: 680px;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.feedback-slider__item:nth-child(1) {
+	background-image: url(../../assets/images/2023-02-21\ 18.11.23.jpg);
+}
+
+.feedback-slider__item:nth-child(2) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.11.41.jpeg);
+}
+
+.feedback-slider__item:nth-child(3) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.11.42.jpeg);
+}
+
+.feedback-slider__item:nth-child(4) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.11.44.jpeg);
+}
+
+.feedback-slider__item:nth-child(5) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.11.46.jpeg);
+}
+
+.feedback-slider__item:nth-child(6) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.01.jpeg);
+}
+
+.feedback-slider__item:nth-child(7) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.03.jpeg);
+}
+
+.feedback-slider__item:nth-child(8) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.27.jpeg);
+}
+
+.feedback-slider__item:nth-child(9) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.36.jpeg);
+}
+
+.feedback-slider__item:nth-child(10) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.45.jpeg);
+}
+
+.feedback-slider__item:nth-child(11) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.48.jpeg);
+}
+
+.feedback-slider__item:nth-child(12) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.54.jpeg);
+}
+
+.feedback-slider__item:nth-child(13) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.12.57.jpeg);
+}
+
+.feedback-slider__item:nth-child(14) {
+	background-image: url(../../assets/images/photo_2023-02-21\ 18.13.10.jpeg);
+}
+
+.feedback-slider {
+	position: relative;
+}
+
+.feedback-slider__wrapper {
+	overflow: hidden;
+}
+
+.feedback-slider__items {
+	display: flex;
+	transition: transform 0.5s ease;
+	will-change: transform;
+}
+
+.feedback-slider__transition-none {
+	transition: none;
+}
+
+.feedback-slider__item {
+	flex: 0 0 100%;
+	max-width: 100%;
+	user-select: none;
+	will-change: transform;
+}
+
+.feedback-slider__btn {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	background: rgb(0 0 0 / 20%);
+	border: none;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.feedback-slider__btn_hide {
+	display: none;
+}
+
+.feedback-slider__btn_prev {
+	left: 0;
+}
+
+.feedback-slider__btn_next {
+	right: 0;
+}
+
+.feedback-slider__btn:hover,
+.feedback-slider__btn:focus {
+	color: #fff;
+	text-decoration: none;
+	background: rgb(0 0 0 / 30%);
+	outline: 0;
+}
+
+.feedback-slider__btn::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.feedback-slider__btn_prev::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.feedback-slider__btn_next::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.feedback-slider__indicators {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 15;
+	display: flex;
+	justify-content: center;
+	margin: 0 15%;
+	padding-left: 0;
+	list-style: none;
+}
+
+.feedback-slider__indicator {
+	flex: 0 1 auto;
+	box-sizing: content-box;
+	width: 30px;
+	height: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	background-color: rgb(255 255 255 / 50%);
+	background-clip: padding-box;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	cursor: pointer;
+}
+
+.feedback-slider__indicator_active {
+	background-color: rgb(255 255 255 / 90%);
+}
+
 #n5 {
 	@include font-section-title;
 	margin-bottom: 63px;
@@ -9,7 +191,6 @@
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
 
 .feedback__wrap-image {
 	max-width: 100%;
@@ -27,82 +208,16 @@
 	justify-content: end;
 	max-width: 100%;
 	margin-right: 20px;
-
 }
 
 .feedback__citation {
 	@include font-citation;
 	line-height: 70px;
-
 }
 
-.carousel-item {
-	max-width: 900px;
-	height: 700px;
-}
-
-.carousel-control-prev {
-	height: 500px;
-	width: 90px;
-}
-
-
-.carousel-control-next {
-	height: 500px;
-	width: 90px;
-}
-
-
-@media screen and (max-width:1020px) {
-	#carouselExampleFade {
-		max-width: 750px;
-		max-height: 550px;
-	}
-
-	.carousel-control-prev {
-		height: 400px;
-		width: 60px;
-	}
-
-	.carousel-control-next {
-		height: 400px;
-		width: 60px;
-	}
-
-
-}
-
-@media screen and (max-width:840px) {
-
-	#carouselExampleFade {
-		max-width: 650px;
-		max-height: 400px;
-	}
-
-	.carousel-control-prev {
-		height: 300px;
-	}
-
-	.carousel-control-next {
-		height: 300px;
-	}
-
-}
-
-@media screen and (max-width:735px) {
-
-	#carouselExampleFade {
-		max-width: 450px;
-		max-height: 400px;
-
-	}
-
-	.carousel-control-prev {
-		height: 250px;
-	}
-
-	.carousel-control-next {
-		height: 250px;
+@media screen and (max-width: 735px) {
+	.feedback-slider__item {
+		height: 500px;
 	}
 
 	#n5 {
@@ -115,44 +230,22 @@
 
 	.feedback__citation {
 		line-height: 50px;
-
-	}
-
-
-}
-
-@media screen and (max-width:520px) {
-	#carouselExampleFade {
-		width: 350px;
-	}
-
-	.carousel-control-prev {
-		height: 200px;
-	}
-
-	.carousel-control-next {
-		height: 200px;
 	}
 }
 
-@media screen and (max-width:475px) {
+@media screen and (max-width: 640px) {
+	.feedback-slider__item {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.feedback-slider__item {
+		height: 300px;
+	}
 
 	.feedback__citation {
 		font-size: 24px;
 		line-height: 50px;
 	}
-
-	#carouselExampleFade {
-		width: 300px;
-		height: 300px;
-	}
-
-	.carousel-control-prev {
-		height: 150px;
-	}
-
-	.carousel-control-next {
-		height: 150px;
-	}
-
 }

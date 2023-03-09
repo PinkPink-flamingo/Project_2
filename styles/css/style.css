@@ -1265,8 +1265,8 @@ img {
   font-size: 40px;
   line-height: 42px;
   color: #ffffff;
-  padding-left: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
+  margin-top: 0;
 }
 @media screen and (max-width: 730px) {
   .footer__contacts .footer__title {
@@ -1285,24 +1285,29 @@ img {
 .footer__contacts .footer__contactsList-item,
 .footer__contacts .media {
   font-family: "Moniqa-LightParagraph";
-  font-weight: 300;
   font-size: 24px;
   color: #ffffff;
   text-decoration: none;
   list-style: none;
-  padding: 1px;
+  padding: 3px 6px;
   border-radius: 5px;
   border: none;
   background-color: transparent;
+  transition: all 0.5s ease 0s;
 }
 .footer__contacts .media:hover {
   background: #FB016B;
-  padding: 0.2em 1.2em 0.2em 1.2em;
-  transition: all 0.5s ease 0s;
+  transition: all 0.1s ease 0s;
+  transform: scale(1.05);
+  min-width: 60px;
 }
 .footer__menu {
   grid-row: 2;
   grid-column: 3;
+}
+.footer .footer__contactsList {
+  padding: 0;
+  margin-top: 0;
 }
 .footer .footer__menuList {
   display: flex;
@@ -1316,12 +1321,15 @@ img {
   font-size: 32px;
   color: #ffffff;
   text-decoration: none;
-  padding: 2px 5px;
+  list-style: none;
   border-radius: 5px;
+  transition: all 0.5s ease 0s;
+  padding: 3px 6px;
 }
 .footer .footer__menuList .footer__menuList-item:hover {
   background: #FB016B;
-  transition: all 0.5s ease 0s;
+  transition: all 0.1s ease 0s;
+  transform: scale(1);
 }
 
 @media screen and (max-width: 1024px) {
@@ -1361,9 +1369,6 @@ img {
     align-items: center;
     background-image: none;
     background-color: #000000;
-  }
-  .footer .footer__title {
-    margin-bottom: 30%;
   }
 }
 

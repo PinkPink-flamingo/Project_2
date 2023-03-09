@@ -8,11 +8,7 @@
     background-color: $bg-color;
     background-image: url(/assets/images/imageFooterOld.png);
     background-repeat: no-repeat;
-    // background-size: cover;
     text-decoration: none;
-
-
-
 
     &__contacts {
         grid-row: 2;
@@ -21,13 +17,11 @@
         flex-direction: column;
         padding-left: 20px;
 
-
         .footer__title {
             @include font-section-title;
             margin-bottom: 6%;
             margin-top: 0;
         }
-
         .footer__contactsList-item,
         .media {
             font-family: 'Moniqa-LightParagraph';
@@ -40,8 +34,6 @@
             border: none;
             background-color: transparent;
             transition: all .5s ease 0s;
-
-
         }
 
         .media:hover {
@@ -94,6 +86,7 @@
     .footer {
         grid-template-columns: 40% 2fr 1fr;
         grid-template-rows: 1fr 1fr;
+        background-position: -130px 0;
 
     }
 
@@ -111,32 +104,17 @@
 }
 @media screen and (max-width: 834px) {
     .footer{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr 1fr;
+         
         background-image: none;
-
-    }
-    .footer__menu {
-        display: none;
-    }
-
-    .footer__contacts {
-        grid-row: 2;
-        grid-column: 2;
-
-    }
-
-}
-
-@media screen and (max-width:430px) {
-    .footer {
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: none;
         background-color: $bg-color;
 
+    }
+    .footer__menu {
+        display: none;
     }
 
 }

@@ -582,7 +582,7 @@ img {
 
 .requests__wrap-list {
   max-width: 482px;
-  max-height: 890px;
+  max-height: 800px;
   overflow: hidden;
   background-color: #D9D9D9;
   position: relative;
@@ -594,7 +594,7 @@ img {
 .requests__list {
   margin: 0px;
   list-style: none;
-  padding: 70px 40px;
+  padding: 60px 40px;
   color: #000000;
 }
 .requests__list-item {
@@ -602,6 +602,9 @@ img {
   text-transform: uppercase;
   font-family: "Manrope-Medium";
   font-size: 20px;
+}
+.requests__list-item:last-child {
+  margin-bottom: 0;
 }
 .requests__list-item::before {
   content: "";
@@ -736,19 +739,16 @@ img {
     transform: none;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
   .requests__wrap-list {
-    max-height: 600px;
+    max-height: 700px;
   }
   .requests__list {
-    padding: 35px 20px;
-    margin-top: 10px;
+    padding: 40px 30px;
+    margin-top: 30px;
   }
   .requests__list-item {
     margin-bottom: 30px;
-  }
-  .requests__list-item:last-child {
-    margin-bottom: 0px;
   }
   .requests__list-item::before {
     content: "";
@@ -756,94 +756,102 @@ img {
     margin-bottom: 2px;
   }
 }
-@media screen and (max-width: 1003px) {
-  .requests__list-item {
-    margin-bottom: 25px;
-  }
-  .requests__list-item::before {
-    content: "";
-    margin-bottom: 3px;
-  }
-}
-@media screen and (max-width: 963px) {
-  .requests__list-item {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
   .requests__wrap-list {
-    max-height: 500px;
+    max-height: 600px;
   }
   .requests__list {
     margin-top: 0px;
   }
   .requests__list-item {
-    font-size: 20px;
+    margin-bottom: 25px;
+    font-size: 18px;
   }
   .requests__list-item::before {
     content: "";
-    margin-right: 5px;
-    margin-bottom: 2px;
     width: 10px;
     height: 10px;
-    border-radius: 3px;
   }
 }
-@media screen and (max-width: 902px) {
+@media screen and (max-width: 995px) {
+  .requests__wrap-list {
+    max-height: 550px;
+  }
+  .requests__list-item {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 945px) {
+  .requests__wrap-list {
+    max-height: 500px;
+  }
   .requests__list-item {
     margin-bottom: 15px;
   }
 }
-@media screen and (max-width: 832px) {
-  .requests__list-item {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (max-width: 730px) {
-  .requests__list-item {
-    font-size: 17px;
-  }
+@media screen and (max-width: 890px) {
   .requests__wrap-list {
     max-height: 450px;
-  }
-  .requests__wrap-first {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 620px) {
-  .requests__wrap-list {
-    top: 26px;
-    max-height: 425px;
   }
   .requests__list-item {
     font-size: 15px;
   }
   .requests__list-item::before {
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     border-radius: 2px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .requests__list {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .requests__wrap-list {
+    top: 26px;
+    max-height: 425px;
   }
   .requests__wrap-image {
     transform: translateX(-20%);
   }
-  .requests__wrap-image::before {
+  .requests__list-item {
+    font-size: 13px;
+  }
+  .requests__list-item::before {
     content: "";
-    height: 5px;
+    width: 7px;
+    height: 7px;
   }
 }
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 655px) {
+  .requests__wrap-list {
+    max-height: 400px;
+  }
+  .requests__list {
+    padding: 25px 15px;
+  }
+  .requests__list-item {
+    margin-bottom: 12px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 580px) {
   .requests__wrap-list {
     top: 0px;
-    max-height: 550px;
+    max-height: 600px;
     border-top: 5px solid #FB016B;
   }
   .requests__wrap-image {
     display: none;
   }
+  .requests__list {
+    padding: 35px 20px;
+  }
   .requests__list-item {
-    font-size: 20px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    margin-bottom: 18px;
   }
   .requests__list-item::before {
     content: "";
@@ -860,6 +868,18 @@ img {
   .requests__consultation-terms-text {
     font-size: 12px;
     margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .requests__list-item {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+  .requests__list-item::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
   }
 }
 .education__title {

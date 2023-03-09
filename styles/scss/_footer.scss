@@ -109,16 +109,14 @@
     }
 
 }
-
-
-@media screen and (max-width: 744px) {
-    .footer {
+@media screen and (max-width: 834px) {
+    .footer{
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 1fr 1fr;
-        background-position: -300px 0;
-    }
+        background-image: none;
 
+    }
     .footer__menu {
         display: none;
     }

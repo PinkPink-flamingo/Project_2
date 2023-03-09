@@ -39,12 +39,16 @@
 	display: inline-block;
 }
 
+.education__wrap-foto {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 15px;
+	margin-bottom: 60px;
+}
+
 .education-foto {
-	
-	max-width:100%;
 	border-left: 5px solid $pink-color;
 	border-top: 5px solid $pink-color;
-	margin-bottom: 60px;
 }
 
 .education {

@@ -357,6 +357,10 @@ img {
     margin-bottom: 5px;
   }
 }
+.wrap__img-requests {
+  display: none;
+}
+
 .podcast {
   margin-top: 5rem;
 }
@@ -549,6 +553,18 @@ img {
   }
   .podcast__title {
     margin-bottom: 23px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .wrap__img-requests {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .image__from-requests {
+    border-top: 5px solid #FB016B;
+    border-left: 5px solid #FB016B;
   }
 }
 .requests__title {
@@ -958,12 +974,13 @@ img {
 }
 
 .education__wrap-foto {
-  max-width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
   margin-bottom: 60px;
 }
 
 .education-foto {
-  max-width: 90%;
   border-left: 5px solid #FB016B;
   border-top: 5px solid #FB016B;
 }
@@ -1204,12 +1221,13 @@ img {
 }
 
 .feedback__wrap-image {
-  max-width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
   margin-bottom: 60px;
 }
 
 .feedback__image {
-  max-width: 90%;
   border-right: 5px solid #FB016B;
   border-bottom: 5px solid #FB016B;
 }

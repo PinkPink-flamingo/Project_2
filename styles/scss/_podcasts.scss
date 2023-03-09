@@ -1,3 +1,7 @@
+.wrap__img-requests {
+	display: none;
+}
+
 .podcast {
 	margin-top: 5rem;
 }
@@ -175,5 +179,21 @@
 
 	.podcast__title {
 		margin-bottom: 23px;
+	}
+}
+
+
+
+@media screen and (max-width: 580px) {
+	.wrap__img-requests {
+		display: block;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	.image__from-requests {
+		border-top: 5px solid $pink-color;
+		border-left: 5px solid $pink-color;
 	}
 }

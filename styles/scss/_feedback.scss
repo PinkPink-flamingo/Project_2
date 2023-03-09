@@ -193,12 +193,13 @@
 }
 
 .feedback__wrap-image {
-	max-width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 15px;
 	margin-bottom: 60px;
 }
 
 .feedback__image {
-	max-width: 90%;
 	border-right: 5px solid $pink-color;
 	border-bottom: 5px solid $pink-color;
 }

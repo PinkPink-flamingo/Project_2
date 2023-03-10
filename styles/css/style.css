@@ -1417,7 +1417,7 @@ img {
     background-color: #000000;
   }
   .footer__title {
-   padding-top: 20%;
+    margin-top: 20%;
   }
   .footer__menu {
     display: none;

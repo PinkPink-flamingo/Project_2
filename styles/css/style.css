@@ -912,6 +912,9 @@ img {
     font-size: 12px;
     margin-bottom: 5px;
   }
+  .requests__consultation-button {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 450px) {
   .requests__list-item {
@@ -1035,9 +1038,9 @@ img {
     width: 80px;
   }
 }
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 580px) {
   .education__button {
-    font-size: 30px;
+    margin: 0 auto;
   }
 }
 .feedback__container {

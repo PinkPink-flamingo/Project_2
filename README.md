@@ -1,2 +1,2 @@
-# Project_2
+# Business card site
 ![image](/assets/images/README.png)

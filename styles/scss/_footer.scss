@@ -105,7 +105,7 @@
 }
 @media screen and (max-width: 834px) {
     .footer{
-         
+         height: 250px;
         background-image: none;
         display: flex;
         justify-content: center;
@@ -113,6 +113,11 @@
         background-image: none;
         background-color: $bg-color;
 
+    }
+    .footer__title {
+        
+        margin-top: 20%;
+ 
     }
     .footer__menu {
         display: none;

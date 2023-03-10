@@ -106,7 +106,7 @@
 }
 
 .about__button-terms {
-  margin-top: 40px;
+  margin-top: 10px;
   position: absolute;
   max-width: 1000px;
   background-color: $grey-color;
@@ -171,6 +171,7 @@
   background-position: -150px 0;
 
 }
+
 
 @media screen and (max-width: 800px) {
   [for='burger'] {

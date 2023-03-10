@@ -159,9 +159,14 @@ img {
   opacity: 0.85;
   transition: all 1s ease 0s;
 }
+@media screen and (max-width: 580px) {
+  .about__button-button {
+    font-size: 30px;
+  }
+}
 
 .about__button-terms {
-  margin-top: 40px;
+  margin-top: 10px;
   position: absolute;
   max-width: 1000px;
   background-color: #D9D9D9;
@@ -566,6 +571,9 @@ img {
     border-top: 5px solid #FB016B;
     border-left: 5px solid #FB016B;
   }
+  .podcast {
+    margin-bottom: 30px;
+  }
 }
 .requests__title {
   font-family: "Moniqa-SemiBoldParagraph";
@@ -681,9 +689,14 @@ img {
   opacity: 0.85;
   transition: all 1s ease 0s;
 }
+@media screen and (max-width: 580px) {
+  .requests__consultation-button {
+    font-size: 30px;
+  }
+}
 
 .requests__consultation-terms {
-  margin-top: 40px;
+  margin-top: 10px;
   position: absolute;
   max-width: 800px;
   background-color: #D9D9D9;
@@ -712,10 +725,6 @@ img {
   opacity: 1;
 }
 
-.requests__wrap-consultation {
-  margin-bottom: 80px;
-}
-
 .requests__wrap-citation {
   display: flex;
   justify-content: end;
@@ -732,6 +741,7 @@ img {
   text-align: right;
   color: #FB016B;
   line-height: 70px;
+  margin-bottom: 0px;
 }
 @media screen and (max-width: 730px) {
   .requests__citation {
@@ -744,10 +754,6 @@ img {
     font-size: 24px;
     line-height: 30px;
   }
-}
-
-.requests {
-  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1180px) {
@@ -841,6 +847,15 @@ img {
     height: 7px;
   }
 }
+@media screen and (max-width: 732px) {
+  .title-second {
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .requests__consultation {
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 655px) {
   .requests__wrap-list {
     max-height: 400px;
@@ -875,9 +890,6 @@ img {
     height: 10px;
     border-radius: 3px;
   }
-  .requests__consultation {
-    margin-top: 40px;
-  }
   .requests__consultation-button {
     font-size: 30px;
   }
@@ -905,7 +917,6 @@ img {
   font-size: 40px;
   line-height: 42px;
   color: #ffffff;
-  margin-bottom: 43px;
 }
 @media screen and (max-width: 730px) {
   .education__title {
@@ -944,9 +955,14 @@ img {
   opacity: 0.85;
   transition: all 1s ease 0s;
 }
+@media screen and (max-width: 580px) {
+  .education__button {
+    font-size: 30px;
+  }
+}
 
 .education__images {
-  margin-top: 40px;
+  margin-top: 10px;
   position: absolute;
   max-width: 1240px;
   background-color: #D9D9D9;
@@ -989,15 +1005,17 @@ img {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 732px) {
+  .education__title {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 655px) {
   .image-wrap {
     width: 100px;
   }
 }
 @media screen and (max-width: 455px) {
-  .education__images {
-    margin-top: 20px;
-  }
   .image-wrap {
     width: 80px;
   }
@@ -1304,19 +1322,12 @@ img {
   line-height: 42px;
   color: #ffffff;
   margin-top: 0;
+  margin-bottom: 10px;
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 834px) {
   .footer__contacts .footer__title {
+    padding-top: 30px;
     font-size: 30px;
-    line-height: 32px;
-    margin-bottom: 43px;
-  }
-}
-@media screen and (max-width: 410px) {
-  .footer__contacts .footer__title {
-    font-size: 26px;
-    line-height: 30px;
-    margin-bottom: 23px;
   }
 }
 .footer__contacts .footer__contactsList-item,
@@ -1395,17 +1406,8 @@ img {
     background-image: none;
     background-color: #000000;
   }
-  .footer__title {
-    padding-top: 20%;
-  }
   .footer__menu {
     display: none;
-  }
-}
-@media screen and (max-width: 732px) {
-  .footer__title {
-    padding: 0 px;
-    margin-bottom: 0px;
   }
 }
 

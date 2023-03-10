@@ -91,7 +91,7 @@
 }
 
 .requests__consultation-terms {
-	margin-top: 40px;
+	margin-top: 10px;
 	position: absolute;
 	max-width: 800px;
 	background-color: $grey-color;
@@ -122,9 +122,6 @@
 	}
 }
 
-.requests__wrap-consultation {
-	margin-bottom: 80px;
-}
 
 .requests__wrap-citation {
 	display: flex;
@@ -136,12 +133,10 @@
 .requests__citation {
 	@include font-citation;
 	line-height: 70px;
+	margin-bottom: 0px;
 }
 
 //second block end
-.requests {
-	margin-bottom: 10px;
-}
 
 //Media for Requests-section start
 
@@ -192,6 +187,7 @@
 			height: 10px;
 		}
 	}
+
 }
 
 @media screen and (max-width: 995px) {
@@ -260,6 +256,17 @@
 	}
 }
 
+@media screen and (max-width:732px) {
+	.title-second {
+		margin-bottom: 10px;
+		margin-top: 30px;
+	}
+
+	.requests__consultation {
+		margin-top: 10px;
+	}
+}
+
 @media screen and (max-width: 655px) {
 	.requests__wrap-list {
 		max-height: 400px;
@@ -304,7 +311,6 @@
 	}
 
 	.requests__consultation {
-		margin-top: 40px;
 
 		&-button {
 			font-size: 30px;
@@ -315,6 +321,7 @@
 		font-size: 12px;
 		margin-bottom: 5px;
 	}
+
 }
 
 @media screen and (max-width: 450px) {

@@ -1,6 +1,5 @@
 .education__title {
 	@include font-section-title;
-	margin-bottom: 43px;
 }
 
 .education__button {
@@ -11,7 +10,7 @@
 }
 
 .education__images {
-	margin-top: 40px;
+	margin-top: 10px;
 	position: absolute;
 	max-width: 1240px;
 	background-color: $grey-color;
@@ -55,6 +54,12 @@
 	margin-bottom: 80px;
 }
 
+@media screen and (max-width:732px) {
+	.education__title {
+		margin-bottom: 10px;
+	}
+}
+
 @media screen and (max-width:655px) {
 	.image-wrap {
 		width: 100px;
@@ -62,10 +67,6 @@
 }
 
 @media screen and (max-width:455px) {
-
-	.education__images {
-		margin-top: 20px;
-	}
 
 	.image-wrap {
 		width: 80px;

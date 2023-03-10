@@ -18,9 +18,19 @@
         padding-left: 20px;
 
         .footer__title {
-            @include font-section-title;
-            //  margin-bottom: 6%;
+            font-family: 'Moniqa-SemiBoldParagraph';
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 42px;
+            color: $white-color;
             margin-top: 0;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 834px) {
+                padding-top: 30px;
+                font-size: 30px;
+            }
         }
 
         .footer__contactsList-item,
@@ -116,19 +126,8 @@
 
     }
 
-    .footer__title {
-        padding-top: 20%;
-    }
-
     .footer__menu {
         display: none;
     }
 
-}
-
-@media screen and (max-width: 732px) {
-    .footer__title {
-        padding: 0 px;
-        margin-bottom: 0px;
-    }
 }

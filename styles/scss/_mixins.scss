@@ -61,6 +61,10 @@
         opacity: .85;
         transition: all 1s ease 0s;
     }
+
+    @media screen and (max-width: 580px) {
+        font-size: 30px;
+    }
 }
 
 //Чтобы воспользоваться @mixin - пишем @include "название миксина";

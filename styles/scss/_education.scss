@@ -73,6 +73,12 @@
 	}
 }
 
+@media screen and (max-width:374px) {
+	.image-wrap {
+		width: 67px;
+	}
+}
+
 @media screen and (max-width: 580px) {
 	.education__button {
 		margin: 0 auto;

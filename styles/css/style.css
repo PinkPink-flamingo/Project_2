@@ -1017,7 +1017,7 @@ img {
 }
 
 .education {
-  margin-bottom: 6px;
+  margin-bottom: 43px;
 }
 
 @media screen and (max-width: 732px) {
@@ -1342,6 +1342,7 @@ img {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 10px;
+  padding-top: 20%;
 }
 @media screen and (max-width: 834px) {
   .footer__contacts .footer__title {

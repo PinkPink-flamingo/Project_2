@@ -19,9 +19,10 @@
 
         .footer__title {
             @include font-section-title;
-            margin-bottom: 6%;
+            //  margin-bottom: 6%;
             margin-top: 0;
         }
+
         .footer__contactsList-item,
         .media {
             font-family: 'Moniqa-LightParagraph';
@@ -102,8 +103,9 @@
     }
 
 }
+
 @media screen and (max-width: 834px) {
-    .footer{
+    .footer {
         height: 250px;
         background-image: none;
         display: flex;
@@ -113,11 +115,20 @@
         background-color: $bg-color;
 
     }
+
     .footer__title {
         padding-top: 20%;
-       }
+    }
+
     .footer__menu {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 732px) {
+    .footer__title {
+        padding: 0 px;
+        margin-bottom: 0px;
+    }
 }

@@ -1303,7 +1303,6 @@ img {
   font-size: 40px;
   line-height: 42px;
   color: #ffffff;
-  margin-bottom: 6%;
   margin-top: 0;
 }
 @media screen and (max-width: 730px) {
@@ -1401,6 +1400,12 @@ img {
   }
   .footer__menu {
     display: none;
+  }
+}
+@media screen and (max-width: 732px) {
+  .footer__title {
+    padding: 0 px;
+    margin-bottom: 0px;
   }
 }
 

@@ -1388,12 +1388,16 @@ img {
 }
 @media screen and (max-width: 834px) {
   .footer {
+    height: 250px;
     background-image: none;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: none;
     background-color: #000000;
+  }
+  .footer__title {
+    padding-top: 20%;
   }
   .footer__menu {
     display: none;

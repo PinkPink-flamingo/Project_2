@@ -1322,7 +1322,6 @@ img {
   font-size: 40px;
   line-height: 42px;
   color: #ffffff;
-  margin-bottom: 6%;
   margin-top: 0;
 }
 @media screen and (max-width: 730px) {
@@ -1408,7 +1407,9 @@ img {
 }
 @media screen and (max-width: 834px) {
   .footer {
+ 
     height: 300px;
+ 
     background-image: none;
     display: flex;
     justify-content: center;
@@ -1417,10 +1418,19 @@ img {
     background-color: #000000;
   }
   .footer__title {
-    margin-top: 20%;
+ 
+ 
+    padding-top: 20%;
+ 
   }
   .footer__menu {
     display: none;
+  }
+}
+@media screen and (max-width: 732px) {
+  .footer__title {
+    padding: 0 px;
+    margin-bottom: 0px;
   }
 }
 
